@@ -1,5 +1,5 @@
 /**
- * サイトを作る：npm run build → dist/ に静的な HTML 一式ができる。
+ * サイトを作る：npm run build → dist.nosync/ に静的な HTML 一式ができる。
  *
  * 食品ページは data/foods.json から自動で作る（HTML を手で書かない）。
  * sitemap.xml も同じ一覧から作るので、食品を追加すると自動で載る。
@@ -21,13 +21,13 @@ import {
   renderSupport,
 } from './pages/static.ts';
 import { renderTop } from './pages/top.ts';
-import { absUrl, BASE_PATH, hasAppStoreUrl } from './site.ts';
+import { absUrl, BASE_PATH, DIST_DIR, hasAppStoreUrl } from './site.ts';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const DIST = join(ROOT, 'dist');
+const DIST = join(ROOT, DIST_DIR);
 
 function write(sitePath: string, content: string): void {
-  // '/foods/' → dist/foods/index.html、'/404.html' → dist/404.html
+  // '/foods/' → dist.nosync/foods/index.html、'/404.html' → dist.nosync/404.html
   const file = sitePath.endsWith('/') ? join(DIST, sitePath, 'index.html') : join(DIST, sitePath);
   mkdirSync(dirname(file), { recursive: true });
   writeFileSync(file, content);
@@ -66,7 +66,7 @@ write('/sitemap.xml', sitemap);
 write('/robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${absUrl('/sitemap.xml')}\n`);
 
 console.log(
-  `dist/ に ${pages.length + 2} ページを作りました` +
+  `${DIST_DIR}/ に ${pages.length + 2} ページを作りました` +
     `\n  食品：全${allFoods.length} / 公開（ページあり）${publishedFoods.length} / 情報源なしで公開準備中 ${pendingFoods.length} / 参考値なし ${noReferenceFoods.length}` +
     `（requireSources: ${siteConfig.publish.requireSources}）` +
     `\n  サイトURL: ${siteConfig.siteUrl}（パス: ${BASE_PATH || '/'}）` +

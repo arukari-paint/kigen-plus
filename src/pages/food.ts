@@ -46,8 +46,12 @@ export function foodDescription(f: WebFood): string {
   return `${f.displayName}の期限について、KIGEN+での扱いと参考情報を確認できます。KIGEN+では、${d.hiddenReason ?? ''}`;
 }
 
+/** 情報源の運営者が数値を保証しているように見えないよう、一覧の前に必ず添える */
+const SOURCE_NOTE =
+  '参考値は、KIGEN+が下記の情報をもとに独自にまとめたものです。各情報源の運営者が作成・監修したものではありません。';
+
 function sourceList(sources: FoodSource[]): Raw {
-  return html`<ul class="source-list">${sources.map(
+  return html`<p class="source-note">${SOURCE_NOTE}</p><ul class="source-list">${sources.map(
     (s) => html`<li>${
       s.url
         ? html`<a href="${s.url}" rel="noopener nofollow" target="_blank">${s.title}</a>`

@@ -14,7 +14,7 @@ website/
   site.config.ts        ← URL・App Store URL・公開条件などの設定（ここだけ変えればよい）
   data/foods.json       ← 食品データ（アプリから自動で書き出す。手で編集しない）
   src/
-    build.ts            ← サイトを作る入口（dist/ に出力）
+    build.ts            ← サイトを作る入口（dist.nosync/ に出力）
     foods.ts            ← 食品データの読み込み・ページを作る食品の判定
     layout.ts           ← 全ページ共通の head（title・description・canonical・OGP）・ヘッダー・フッター
     pages/top.ts        ← TOP
@@ -54,7 +54,7 @@ npm run dev
 | コマンド | 内容 |
 |---|---|
 | `npm run data` | アプリの食品データから `data/foods.json` を作り直す |
-| `npm run build` | サイトを作る（`dist/` に出力） |
+| `npm run build` | サイトを作る（`dist.nosync/` に出力。iCloud Drive に同期されない名前にしている） |
 | `npm run check` | 公開前チェック（build のあとに実行） |
 | `npm run typecheck` | TypeScript の型チェック |
 | `npm run dev` | build して手元のサーバーで表示 |
@@ -190,7 +190,7 @@ GitHub Actions は公開リポジトリなら無料です。
 
 robots.txt について：`/kigen-plus/` のようなプロジェクトサイトでは、検索エンジンはドメインのルート（https://arukari-paint.github.io/robots.txt）を見ます。
 `../site-root/robots.txt` を arukari-paint.github.io リポジトリ（app-ads.txt と同じ場所）に置くと sitemap の場所も伝えられます。
-独自ドメインにした場合は、このサイトの `dist/robots.txt` がそのまま使われます。
+独自ドメインにした場合は、このサイトの `dist.nosync/robots.txt` がそのまま使われます。
 
 ## 独自ドメインを使う（任意・年数千円）
 

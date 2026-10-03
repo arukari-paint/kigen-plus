@@ -19,3 +19,10 @@ export function absUrl(p: string): string {
 }
 
 export const hasAppStoreUrl = siteConfig.appStoreUrl.startsWith('https://');
+
+/**
+ * サイトの出力先フォルダ（website/ の中）。
+ * 「.nosync」で終わる名前は iCloud Drive が同期しないため、デスクトップが iCloud 同期されていても
+ * ビルドのたびに同期と衝突して「foods 2」のような重複フォルダができたり、止まったりしない。
+ */
+export const DIST_DIR = 'dist.nosync';

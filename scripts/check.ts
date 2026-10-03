@@ -2,7 +2,7 @@
  * 公開前チェック：npm run build のあとに npm run check
  *
  * - 各ページの title / meta description / canonical / OGP / H1 / 画像の alt
- * - サイト内リンク切れ（href・src が dist/ のファイルを指しているか）
+ * - サイト内リンク切れ（href・src が dist.nosync/ のファイルを指しているか）
  * - sitemap.xml に食品ページがすべて載っているか、robots.txt があるか
  * - 禁止表現（「食べられます」「安全です」など）が使われていないか
  * - 消費期限の食品・参考値がない食品のページが作られていないか
@@ -15,14 +15,14 @@ import { fileURLToPath } from 'node:url';
 
 import { siteConfig } from '../site.config.ts';
 import { allFoods, hasValidSources, publishedFoods } from '../src/foods.ts';
-import { BASE_PATH, absUrl } from '../src/site.ts';
+import { BASE_PATH, DIST_DIR, absUrl } from '../src/site.ts';
 
-const DIST = fileURLToPath(new URL('../dist', import.meta.url));
+const DIST = fileURLToPath(new URL(`../${DIST_DIR}`, import.meta.url));
 const errors: string[] = [];
 const fail = (file: string, msg: string) => errors.push(`${file}: ${msg}`);
 
 if (!existsSync(DIST)) {
-  console.error('dist/ がありません。先に npm run build を実行してください。');
+  console.error(`${DIST_DIR}/ がありません。先に npm run build を実行してください。`);
   process.exit(1);
 }
 

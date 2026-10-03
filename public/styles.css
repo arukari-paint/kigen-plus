@@ -247,6 +247,7 @@ p { margin: 0 0 1em; }
 .sources[open] > summary::after { content: "－"; }
 .sources-title { font-size: 15px; font-weight: 700; display: inline; }
 .sources-body { padding: 0 20px 12px; font-size: 14px; color: var(--sub); }
+.source-note + .source-list { margin-top: 0; }
 .source-list { padding-left: 1.2em; margin: 0 0 12px; color: var(--text); }
 .source-list li { margin-bottom: 6px; }
 .source-type { color: var(--sub); font-size: 13px; }
@@ -273,3 +274,4 @@ p { margin: 0 0 1em; }
   .ref-card { padding: 28px 40px 24px; }
   .ref-value { font-size: 64px; }
 }
+.source-note { font-size: 13px; color: var(--sub); margin: 0 0 8px; }
