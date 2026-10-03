@@ -15,6 +15,7 @@
   var empty = document.querySelector('[data-search-empty]');
   var terms = items.map(function (el) { return (el.getAttribute('data-terms') || '').split('|'); });
   var timer = null;
+  var lastQuery = '';
 
   // アプリの src/lib/normalize.ts と同じ（全角→半角、小文字、カタカナ→ひらがな、空白除去）
   function normalize(s) {
@@ -35,7 +36,14 @@
     });
     groups.forEach(function (g) {
       g.hidden = !g.querySelector('.food-item:not([hidden])');
+      // 結果が切り替わったら、ぱっと消えるのではなく軽くフェードさせる（160ms・表示は待たせない）
+      if (!g.hidden && q !== lastQuery) {
+        g.classList.remove('search-results-fade');
+        void g.offsetWidth;
+        g.classList.add('search-results-fade');
+      }
     });
+    lastQuery = q;
     hideOnSearch.forEach(function (el) { el.hidden = q !== ''; });
     if (q !== '') collapsibles.forEach(function (d) { d.open = true; });
     if (empty) empty.hidden = q === '' || count > 0;
