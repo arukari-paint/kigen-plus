@@ -37,29 +37,25 @@ export const siteConfig = {
   copyrightName: 'KIGEN+',
 
   /**
-   * 食品一覧・TOP に「よく見られる食品」として並べる食品（foodId）。
-   * 食品ページが公開されている食品だけが、この順に最大 popularLimit 件表示される。
-   * 納豆などは情報源が登録されると自動で表示されるようになる。
+   * 食品一覧・TOP に「主要な食品」として並べる食品（foodId）。一般の人が調べそうな順。
+   * アクセス数の順位ではない（「人気」「ランキング」とは表示しない）。
+   * 食品ページが公開されている食品だけが、この順に最大 popularLimit 件表示される（情報源が入れば自動で表示）。
    */
   popularFoodIds: [
     'natto',
     'yogurt',
     'tofu',
-    'white_bread',
     'sliced_cheese',
-    'ham',
     'kimchi',
     'soy_sauce',
-    'mayonnaise',
     'miso',
+    'ham',
+    'bacon',
+    'cup_noodles',
+    'chocolate',
+    'mayonnaise',
     'ketchup',
-    'yaki_nori',
-    'tuna_can',
-    'honey',
-    'curry_roux',
-    'mochi',
-    'wheat_flour',
-    'black_tea',
+    'white_bread',
   ],
   popularLimit: 10,
 

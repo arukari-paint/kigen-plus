@@ -129,7 +129,7 @@ export function renderTop(): string {
       <input id="top-search" name="q" type="search" placeholder="食品名を検索（例：しょうゆ）" autocomplete="off" enterkeyhint="search">
       <button type="submit" class="btn btn-primary btn-small">検索</button>
     </form>
-    <ul class="food-chips" aria-label="よく見られる食品">
+    <ul class="food-chips" aria-label="主要な食品">
       ${popular.map((f, i) => html`<li data-reveal style="--d:${Math.min(i, 8) * 0.5 + 1}"><a href="${path(`/foods/${f.slug}/`)}">${f.displayName}</a></li>`)}
     </ul>
     <p class="more-link"><a href="${path('/foods/')}">すべての食品を見る</a></p>

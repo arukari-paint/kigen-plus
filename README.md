@@ -114,7 +114,7 @@ npm run dev
 | 食品ページを公開する条件 | `publish.requireSources` |
 | Google Analytics | `gaMeasurementId`（空のあいだは読み込まない） |
 | Search Console の所有権確認（HTMLタグ） | `googleSiteVerification` |
-| よく見られる食品 | `popularFoodIds`・`popularLimit`（ページがある食品だけ、この順に表示） |
+| 主要な食品（一覧・TOP） | `popularFoodIds`・`popularLimit`（ページがある食品だけ、この順に表示） |
 
 `siteUrl` を変えると、canonical・OGP・sitemap.xml・robots.txt・サイト内リンクがすべて自動で変わります。
 App Store のURLは、Apple の公式検索API（bundleId: com.kigenplus.app）で確認した正式なものを入れています。

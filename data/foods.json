@@ -1,6 +1,6 @@
 {
-  "datasetVersion": "1.2.0",
-  "lastReviewedAt": "2026-09-27",
+  "datasetVersion": "1.3.0",
+  "lastReviewedAt": "2026-10-03",
   "texts": {
     "definition": "ネット上の期限超過後の喫食情報等をもとにした参考値です。",
     "notSafety": "ネット参考は安全期限ではありません。この日数までなら安全、という意味ではなく、この日数を超えたら危険、という意味でもありません。"
@@ -24,18 +24,34 @@
       "catalogNote": null,
       "referenceMode": "DAYS",
       "referenceMinDays": 1,
-      "referenceTypicalDays": 5,
-      "referenceMaxDays": 7,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 14,
       "confidence": "MEDIUM",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
-      "note": null,
-      "sources": [],
+      "note": "メーカーは、賞味期限を過ぎた納豆は風味が落ちてにおいが強くなるため、おすすめしないとしています。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「納豆の賞味期限切れはいつまで？5日・1週間・1ヶ月は？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/15"
+        },
+        {
+          "title": "サンキュ！「『納豆』の賞味期限切れはいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/179290/"
+        },
+        {
+          "title": "タカノフーズ お客様相談室「納豆のQ&A」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.takanofoods.co.jp/contact/faq/product/natto_3.html"
+        }
+      ],
       "display": {
         "status": "VALUE",
-        "typical": "+5日",
+        "typical": "+3日",
         "typicalApprox": null,
-        "range": "+1〜7日",
+        "range": "+1〜14日",
         "rangeApprox": null,
         "condition": "未開封・冷蔵の場合",
         "hiddenReason": null
@@ -61,18 +77,34 @@
       "catalogNote": "製品によっては消費期限表示のものもあります。",
       "referenceMode": "DAYS",
       "referenceMinDays": 1,
-      "referenceTypicalDays": 1,
-      "referenceMaxDays": 2,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 5,
       "confidence": "MEDIUM",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
-      "note": null,
-      "sources": [],
+      "note": "水入りの豆腐についての情報が中心です。充填豆腐とは日持ちが異なります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「豆腐の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/37"
+        },
+        {
+          "title": "サンキュ！「『豆腐』の賞味期限切れはいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/215611/"
+        },
+        {
+          "title": "macaroni「『豆腐の賞味期限切れ』いつまで食べられる？」（食品衛生監視員執筆）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://macaro-ni.jp/43637"
+        }
+      ],
       "display": {
         "status": "VALUE",
-        "typical": "+1日",
+        "typical": "+2日",
         "typicalApprox": null,
-        "range": "+1〜2日",
+        "range": "+1〜5日",
         "rangeApprox": null,
         "condition": "未開封・冷蔵の場合",
         "hiddenReason": null
@@ -272,19 +304,35 @@
       "defaultStorage": "fridge",
       "catalogNote": null,
       "referenceMode": "DAYS",
-      "referenceMinDays": 4,
-      "referenceTypicalDays": 5,
-      "referenceMaxDays": 9,
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 5,
       "confidence": "MEDIUM",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
       "note": null,
-      "sources": [],
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「ヨーグルトの賞味期限切れはいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/441"
+        },
+        {
+          "title": "サンキュ！「ヨーグルトは賞味期限切れでも食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/179386/"
+        },
+        {
+          "title": "明治の食育「乳製品の賞味期限と保存のめやす」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.meiji.co.jp/meiji-shokuiku/know/keep/"
+        }
+      ],
       "display": {
         "status": "VALUE",
-        "typical": "+5日",
+        "typical": "+3日",
         "typicalApprox": null,
-        "range": "+4〜9日",
+        "range": "+1〜5日",
         "rangeApprox": null,
         "condition": "未開封・冷蔵の場合",
         "hiddenReason": null
@@ -475,19 +523,40 @@
       "defaultStorage": "fridge",
       "catalogNote": null,
       "referenceMode": "DAYS",
-      "referenceMinDays": 3,
-      "referenceTypicalDays": 7,
-      "referenceMaxDays": 7,
-      "confidence": "HIGH",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 30,
+      "confidence": "MEDIUM",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
-      "note": null,
-      "sources": [],
+      "note": "スライスチーズなどのプロセスチーズが前提の情報です。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「チーズの賞味期限切れはいつまで？」",
+          "sourceType": "MEDIA",
+          "url": "https://douzo.dinos.co.jp/posts/499"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『チーズ』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/178352/"
+        },
+        {
+          "title": "六甲バター（QBB）よくある質問",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.qbb.co.jp/customer/faq"
+        },
+        {
+          "title": "雪印メグミルク お客様センター「賞味期限・保存方法」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.meg-snow.com/customer/faq/preservation.html"
+        }
+      ],
       "display": {
         "status": "VALUE",
-        "typical": "+7日",
+        "typical": "+30日",
         "typicalApprox": null,
-        "range": "+3〜7日",
+        "range": "+30日",
         "rangeApprox": null,
         "condition": "未開封・冷蔵の場合",
         "hiddenReason": null
@@ -610,19 +679,35 @@
       "defaultStorage": "fridge",
       "catalogNote": null,
       "referenceMode": "DAYS",
-      "referenceMinDays": 3,
-      "referenceTypicalDays": 7,
-      "referenceMaxDays": 7,
-      "confidence": "HIGH",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 10,
+      "confidence": "LOW",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
-      "note": null,
-      "sources": [],
+      "note": "情報源によって、期限を過ぎた後の期間についての記述に大きな差があります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「ハムの賞味期限切れはいつまで？2週間後は危険？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/210"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『ロースハム』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/172244/"
+        },
+        {
+          "title": "日本ハム・ソーセージ工業協同組合「Q.「賞味期限」を過ぎても食べることはできますか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://content.hamukumi.or.jp/faq/faq-1546/"
+        }
+      ],
       "display": {
         "status": "VALUE",
-        "typical": "+7日",
+        "typical": "+3日",
         "typicalApprox": null,
-        "range": "+3〜7日",
+        "range": "+1〜10日",
         "rangeApprox": null,
         "condition": "未開封・冷蔵の場合",
         "hiddenReason": null
@@ -649,7 +734,23 @@
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
       "note": null,
-      "sources": [],
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「ベーコンの賞味期限切れはいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/43"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『ベーコン』はいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/215610/"
+        },
+        {
+          "title": "日本ハム・ソーセージ工業協同組合「Q.「賞味期限」を過ぎても食べることはできますか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://content.hamukumi.or.jp/faq/faq-1546/"
+        }
+      ],
       "display": {
         "status": "VALUE",
         "typical": "+3日",
@@ -1033,19 +1134,30 @@
       "defaultStorage": "fridge",
       "catalogNote": null,
       "referenceMode": "DAYS",
-      "referenceMinDays": 3,
+      "referenceMinDays": 1,
       "referenceTypicalDays": 7,
-      "referenceMaxDays": 7,
+      "referenceMaxDays": 10,
       "confidence": "MEDIUM",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "fridge",
-      "note": null,
-      "sources": [],
+      "note": "期限を過ぎると発酵が進み、酸味が強くなります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「キムチの賞味期限切れはいつまで？1ヶ月？」（野菜ソムリエ監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/89"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『キムチ』はいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/178394/"
+        }
+      ],
       "display": {
         "status": "VALUE",
         "typical": "+7日",
         "typicalApprox": null,
-        "range": "+3〜7日",
+        "range": "+1〜10日",
         "rangeApprox": null,
         "condition": "未開封・冷蔵の場合",
         "hiddenReason": null
@@ -2060,22 +2172,28 @@
       "defaultStorage": "freezer",
       "catalogNote": null,
       "referenceMode": "DAYS",
-      "referenceMinDays": 30,
-      "referenceTypicalDays": 30,
-      "referenceMaxDays": 90,
-      "confidence": "MEDIUM",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "freezer",
-      "note": "冷凍状態が適切に保たれていることが前提の情報です。家庭用冷凍庫では温度変化があります。",
-      "sources": [],
+      "note": null,
+      "sources": [
+        {
+          "title": "日本冷凍食品協会 冷食オンライン「賞味期限切れの冷凍食品は食べられる？」",
+          "sourceType": "PUBLIC",
+          "url": "https://online.reishokukyo.or.jp/column/5209/"
+        }
+      ],
       "display": {
-        "status": "VALUE",
-        "typical": "+30日",
+        "status": "NONE",
+        "typical": null,
         "typicalApprox": null,
-        "range": "+30〜90日",
+        "range": null,
         "rangeApprox": null,
         "condition": "未開封・冷凍の場合",
-        "hiddenReason": null
+        "hiddenReason": "日本冷凍食品協会は、賞味期限を過ぎた冷凍食品は基本的に食べないほうがよいとしており、期限を過ぎた後の期間の目安は示されていないため、参考値は設定していません。"
       },
       "opened": null
     },
@@ -2172,7 +2290,23 @@
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "room",
       "note": null,
-      "sources": [],
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「カップラーメン（カップ麺）の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/390"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『カップ麺』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/cupnoodle-kigen/"
+        },
+        {
+          "title": "日清食品「インスタントラーメンの賞味期間について教えてください。」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.nissin.com/jp/customer/faq/67/"
+        }
+      ],
       "display": {
         "status": "VALUE",
         "typical": "+30日",
@@ -2417,17 +2551,33 @@
       "referenceMode": "DAYS",
       "referenceMinDays": 30,
       "referenceTypicalDays": 30,
-      "referenceMaxDays": 90,
+      "referenceMaxDays": 365,
       "confidence": "MEDIUM",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "room",
-      "note": null,
-      "sources": [],
+      "note": "板チョコなどが前提です。生クリーム・ナッツ・クッキーなどが入ったチョコには当てはまりません。",
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『チョコ』はいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/178230/"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『チョコ』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/choco-kigen/"
+        },
+        {
+          "title": "森永製菓「賞味期限が過ぎてしまったものは食べられませんか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.morinaga.co.jp/faq/faq_detail.html?id=13"
+        }
+      ],
       "display": {
         "status": "VALUE",
         "typical": "+30日",
         "typicalApprox": null,
-        "range": "+30〜90日",
+        "range": "+30〜365日",
         "rangeApprox": null,
         "condition": "未開封・常温の場合",
         "hiddenReason": null

@@ -52,7 +52,7 @@ export function renderFoods(): string {
   <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
 
   <section class="popular" aria-labelledby="popular-title" data-hide-on-search>
-    <h2 id="popular-title" class="list-title">よく見られる食品</h2>
+    <h2 id="popular-title" class="list-title">主要な食品</h2>
     <ul class="food-chips">
       ${popular.map((f) => html`<li><a href="${path(`/foods/${f.slug}/`)}">${f.displayName}</a></li>`)}
     </ul>

@@ -84,7 +84,7 @@ export function relatedFoods(food: WebFood, limit = 6): WebFood[] {
   return publishedFoods.filter((f) => f.category === food.category && f.foodId !== food.foodId).slice(0, limit);
 }
 
-/** よく見られる食品（ページがあるものだけ） */
+/** 主要な食品（ページがあるものだけ。アクセス数の順位ではない） */
 export function popularFoods(): WebFood[] {
   return siteConfig.popularFoodIds
     .map((id) => getFood(id))
