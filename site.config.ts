@@ -55,7 +55,6 @@ export const siteConfig = {
     'chocolate',
     'mayonnaise',
     'ketchup',
-    'white_bread',
   ],
   popularLimit: 10,
 
