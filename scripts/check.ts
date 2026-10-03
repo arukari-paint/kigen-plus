@@ -128,6 +128,9 @@ for (const f of allFoods) {
       }
       if (src.includes('整理中')) fail(`foods/${f.slug}/`, '「情報源は整理中」の食品ページがあります（requireSources: true）');
     }
+    // 広告は参考値・注意書きから離す（KIGEN+ の案内より下だけ）
+    const adAt = src.indexOf('class="ad-area"');
+    if (adAt !== -1 && adAt < src.indexOf('class="cta-card"')) fail(`foods/${f.slug}/`, '広告が KIGEN+ の案内より上にあります');
     if (f.display.status !== 'VALUE' && /class="ref-value">\+\d/.test(src)) {
       fail(`foods/${f.slug}/`, '代表値がない食品に +○日 が表示されています');
     }

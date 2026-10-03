@@ -4,7 +4,7 @@
  */
 import { foodData, relatedFoods } from '../foods.ts';
 import { html, type Raw } from '../html.ts';
-import { appStoreButton, page } from '../layout.ts';
+import { adSlot, appStoreButton, page } from '../layout.ts';
 import { path } from '../site.ts';
 import type { FoodSource, SourceType, WebFood } from '../types.ts';
 
@@ -159,6 +159,8 @@ export function renderFood(f: WebFood): string {
     : null}
 
   <p class="back-link"><a href="${path('/foods/')}">← 食品一覧へ戻る</a></p>
+
+  ${adSlot('food')}
 </article>
 `;
 

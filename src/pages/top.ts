@@ -1,7 +1,7 @@
 import { siteConfig } from '../../site.config.ts';
 import { popularFoods } from '../foods.ts';
 import { html, type Raw } from '../html.ts';
-import { appStoreButton, page } from '../layout.ts';
+import { adSlot, appStoreButton, page } from '../layout.ts';
 import { absUrl, hasAppStoreUrl, path } from '../site.ts';
 
 /** 実際のアプリのスクリーンショット（public/images。縮小のみで内容は変えていない） */
@@ -144,6 +144,8 @@ export function renderTop(): string {
     <p class="final-note">KIGEN+ は、食品が食べられるかどうかを判定するアプリではありません。</p>
   </div>
 </section>
+
+${adSlot('top') ? html`<div class="wrap narrow">${adSlot('top')}</div>` : null}
 `;
 
   return page(

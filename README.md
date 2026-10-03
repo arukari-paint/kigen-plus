@@ -253,3 +253,35 @@ robots.txt について：`/kigen-plus/` のようなプロジェクトサイト
 - 正式版アプリから撮影したスクリーンショットへの差し替え（上の「画像について」）
 - 納豆・ヨーグルトなど、情報源が未登録の食品（食品一覧の「Webでは公開準備中の食品」・現在32件）の情報源をアプリ側（`../src/data/referenceSources.ts`）に追加する → 追加すれば自動で公開される
 - Search Console への登録と `googleSiteVerification` の設定
+
+## Webサイトの広告（Google AdSense）
+
+アプリの広告（AdMob）とは別に、Google AdSense への申し込みと審査が必要です（無料）。
+`site.config.ts` の `adsense.client` が空のあいだは、AdSense のコードは一切読み込まれません。
+
+広告はページの下部だけに出します（参考値・注意書きの近くには出さない。`npm run check` が確認）。
+
+- TOP：最下部（`adsense.slots.top`）
+- 食品一覧：最下部（`adsense.slots.foods`）
+- 食品ページ：「食品一覧へ戻る」の下（`adsense.slots.food`）
+
+### 始め方
+
+1. https://adsense.google.com/ で申し込む。サイトの URL には `arukari-paint.github.io` を入れる
+   （`/kigen-plus/` は付けない。github.io は Public Suffix List に載っているので、この形で登録できる）
+2. 表示されたサイト運営者ID（`ca-pub-` で始まる）を `site.config.ts` の `adsense.client` に入れ、build → check → コミット → 公開する
+   （全ページに AdSense のコードが入り、プライバシーポリシーに広告の説明が自動で追加される）
+3. ドメインのトップにも確認用のタグを置く：`../site-root/index.html` の指定の場所に、AdSense の画面に出る
+   `<meta name="google-adsense-account" content="ca-pub-…">` を貼り、arukari-paint.github.io リポジトリにアップロードする
+   （このページは /kigen-plus/ へ移動するだけのページ）
+4. AdSense の画面に出る ads.txt の1行を `ads.txt` として arukari-paint.github.io リポジトリのルートに置く（`../site-root/README.md`）
+5. AdSense の画面で「審査をリクエスト」する（数日〜数週間）
+6. 承認されたら、AdSense で「広告ユニット」（ディスプレイ広告）を3つ作り、それぞれの ID（数字）を `adsense.slots` の top・foods・food に入れて公開する
+7. AdSense の「プライバシーとメッセージ」で、ヨーロッパ（EEA・英国・スイス）向けの同意メッセージを有効にする（Google 認定の同意管理ツールが必要なため。AdSense 内の機能で無料）
+
+### 注意
+
+- 自動広告は使いません（参考値の近くや最初の画面に出ることがあるため）。AdSense の「自動広告」はオフのままにしてください
+- 自分のサイトの広告をクリックしないでください（AdSense の規約違反になります）
+- 審査では「コンテンツが少ない」と判断されて承認されないことがあります。その場合は、情報源のある食品ページを増やしてから再申請します
+- 広告のコードが入ると、各ページの読み込みが少し重くなります（食品ページにも JavaScript が入ります）

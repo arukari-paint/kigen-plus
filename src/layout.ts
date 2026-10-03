@@ -43,6 +43,31 @@ function breadcrumbJsonLd(crumbs: Crumb[]): object {
   };
 }
 
+/** AdSense のサイト運営者IDが設定されているか */
+export const hasAdsense = /^ca-pub-\d{10,}$/.test(siteConfig.adsense.client);
+
+/** AdSense のコード（審査・所有権の確認にも使う）。ID が空なら何も出さない */
+function adsenseHead(): Raw | null {
+  if (!hasAdsense) return null;
+  const client = siteConfig.adsense.client;
+  return html`<meta name="google-adsense-account" content="${client}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${client}" crossorigin="anonymous"></script>`;
+}
+
+/**
+ * 広告枠（ページ下部だけに置く）。ID が未設定なら何も出さない。
+ * 参考値・注意書きと離すため、食品ページでは KIGEN+ の案内と関連食品より下に置く。
+ */
+export function adSlot(location: keyof typeof siteConfig.adsense.slots): Raw | null {
+  const slot = siteConfig.adsense.slots[location];
+  if (!hasAdsense || !/^\d+$/.test(slot)) return null;
+  return html`<aside class="ad-area" aria-label="広告">
+  <p class="ad-label">広告</p>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="${siteConfig.adsense.client}" data-ad-slot="${slot}" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</aside>`;
+}
+
 function analytics(): Raw | null {
   const id = siteConfig.gaMeasurementId;
   if (!/^G-[A-Z0-9]+$/.test(id)) return null;
@@ -83,6 +108,7 @@ ${siteConfig.googleSiteVerification ? html`<meta name="google-site-verification"
 <link rel="stylesheet" href="${path(`/styles.css?v=${ASSET_VERSION}`)}">
 ${jsonLd.map((d) => html`<script type="application/ld+json">${jsonForScript(d)}</script>\n`)}
 ${analytics()}
+${adsenseHead()}
 </head>
 <body${meta.bodyClass ? raw(` class="${meta.bodyClass}"`) : ''}>
 <a class="skip" href="#main">本文へスキップ</a>

@@ -25,6 +25,24 @@ export const siteConfig = {
   gaMeasurementId: '',
 
   /**
+   * Google AdSense（Webサイトの広告）。アプリの AdMob とは別の設定。
+   * - client：サイト運営者ID（例：'ca-pub-1234567890123456'）。空のあいだは AdSense を一切読み込まない
+   *   （入れると全ページに AdSense のコードが入る。審査の申し込み前に入れて公開する）
+   * - slots：広告ユニットID（数字）。空の場所には広告枠を出さない。どれもページ下部だけ
+   */
+  adsense: {
+    client: '',
+    slots: {
+      /** TOP の最下部 */
+      top: '',
+      /** 食品一覧の最下部 */
+      foods: '',
+      /** 食品ページの最下部（KIGEN+ の案内・同じカテゴリの食品より下） */
+      food: '',
+    },
+  },
+
+  /**
    * Google Search Console の所有権確認（HTMLタグ方式）に使う content の値。
    * 例：<meta name="google-site-verification" content="abc123..."> の abc123... の部分。
    * 空なら出力しない。

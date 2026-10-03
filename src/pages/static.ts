@@ -3,7 +3,7 @@
  */
 import { siteConfig } from '../../site.config.ts';
 import { html } from '../html.ts';
-import { appStoreButton, page } from '../layout.ts';
+import { appStoreButton, hasAdsense, page } from '../layout.ts';
 import { absUrl, path } from '../site.ts';
 
 const hasGa = /^G-[A-Z0-9]+$/.test(siteConfig.gaMeasurementId);
@@ -165,7 +165,11 @@ export function renderPrivacy(): string {
   <p>本サイトの食品検索は、お使いのブラウザの中だけで動作し、入力した文字を開発者が収集することはありません。</p>
   ${hasGa
     ? html`<p>本サイトでは、閲覧状況を把握するために Google LLC のアクセス解析ツール「Google アナリティクス」を利用しています。Google アナリティクスは Cookie を使用して、個人を特定しない形で閲覧ページ・利用環境などの情報を収集します。収集される情報は Google のプライバシーポリシーに基づいて管理されます。<a href="https://tools.google.com/dlpage/gaoptout?hl=ja" rel="noopener" target="_blank">Google アナリティクス オプトアウト アドオン</a>を利用すると、収集を無効にできます。</p>`
-    : html`<p>本サイトでは、アクセス解析ツールや広告は使用していません。</p>`}
+    : null}
+  ${hasAdsense
+    ? html`<p>本サイトでは、Google LLC の広告配信サービス「Google AdSense」を利用しています。Google などの第三者配信事業者は Cookie を使用して、利用者が本サイトや他のサイトに過去にアクセスした際の情報に基づいて広告を配信することがあります。パーソナライズ広告は、<a href="https://myadcenter.google.com/" rel="noopener" target="_blank">Google のマイアドセンター</a>で無効にできます。Google による情報の取り扱いについては、<a href="https://policies.google.com/technologies/ads?hl=ja" rel="noopener" target="_blank">Google の広告に関するポリシー</a>をご確認ください。広告のために、アプリに記録した食品の内容が使われることはありません。</p>`
+    : null}
+  ${!hasGa && !hasAdsense ? html`<p>本サイトでは、アクセス解析ツールや広告は使用していません。</p>` : null}
 
   <h2>7. 第三者への提供</h2>
   <p>開発者が、利用者の情報を第三者に提供することはありません。ただし、上記「3. 広告について」のとおり、広告の配信にあたって Google が情報を取得することがあります。</p>

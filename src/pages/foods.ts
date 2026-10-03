@@ -1,6 +1,6 @@
 import { groupByCategory, noReferenceFoods, pendingFoods, popularFoods, publishedFoods, searchTerms } from '../foods.ts';
 import { html, type Raw } from '../html.ts';
-import { page } from '../layout.ts';
+import { adSlot, page } from '../layout.ts';
 import { path } from '../site.ts';
 import type { WebFood } from '../types.ts';
 
@@ -85,6 +85,8 @@ export function renderFoods(): string {
 
   <p class="search-empty" data-search-empty hidden>見つかりませんでした。ひらがな・別の呼び方でも検索できます。</p>
   <p class="small muted list-foot">KIGEN+ は、食品の安全性や食べられるかどうかを判定するものではありません。</p>
+
+  ${adSlot('foods')}
 </div>
 `;
 
