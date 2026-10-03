@@ -31,7 +31,7 @@ export const siteConfig = {
    * - slots：広告ユニットID（数字）。空の場所には広告枠を出さない。どれもページ下部だけ
    */
   adsense: {
-    client: '',
+    client: 'ca-pub-5826279044084625',
     slots: {
       /** TOP の最下部 */
       top: '',

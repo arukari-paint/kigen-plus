@@ -123,7 +123,7 @@ export function renderPrivacy(): string {
   const body = html`
 <div class="wrap narrow page prose">
   <h1 class="page-title">プライバシーポリシー</h1>
-  <p class="muted small">制定日：2026年9月27日（広告の導入にあわせて同日改定）<br>改定日：2026年10月3日（公式Webサイトについての項目を追加）</p>
+  <p class="muted small">制定日：2026年9月27日（広告の導入にあわせて同日改定）<br>改定日：2026年10月3日（公式Webサイトについての項目${hasAdsense ? "・Webサイトの広告についての説明" : ""}を追加）</p>
 
   <p>KIGEN+（以下「本アプリ」）は、食品の期限と、ご自身の「食べた」「捨てた」の記録を管理するためのアプリです。本アプリと、本アプリの公式Webサイト（以下「本サイト」）における情報の取り扱いについて、以下のとおり定めます。</p>
 
