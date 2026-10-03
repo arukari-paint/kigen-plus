@@ -1,0 +1,5755 @@
+{
+  "datasetVersion": "1.2.0",
+  "lastReviewedAt": "2026-09-27",
+  "texts": {
+    "definition": "ネット上の期限超過後の喫食情報等をもとにした参考値です。",
+    "notSafety": "ネット参考は安全期限ではありません。この日数までなら安全、という意味ではなく、この日数を超えたら危険、という意味でもありません。"
+  },
+  "foods": [
+    {
+      "foodId": "natto",
+      "slug": "natto",
+      "displayName": "納豆",
+      "aliases": [
+        "なっとう",
+        "ひきわり納豆"
+      ],
+      "keywords": [
+        "大豆",
+        "発酵"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 5,
+      "referenceMaxDays": 7,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+5日",
+        "typicalApprox": null,
+        "range": "+1〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "tofu",
+      "slug": "tofu",
+      "displayName": "豆腐",
+      "aliases": [
+        "とうふ",
+        "木綿豆腐",
+        "絹豆腐",
+        "絹ごし豆腐"
+      ],
+      "keywords": [
+        "大豆"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": "製品によっては消費期限表示のものもあります。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 1,
+      "referenceMaxDays": 2,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+1日",
+        "typicalApprox": null,
+        "range": "+1〜2日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "aburaage",
+      "slug": "aburaage",
+      "displayName": "油揚げ",
+      "aliases": [
+        "あぶらあげ",
+        "あぶらげ",
+        "お揚げ"
+      ],
+      "keywords": [
+        "大豆"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 1,
+      "referenceMaxDays": 2,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+1日",
+        "typicalApprox": null,
+        "range": "+1〜2日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "atsuage",
+      "slug": "atsuage",
+      "displayName": "厚揚げ",
+      "aliases": [
+        "あつあげ",
+        "生揚げ"
+      ],
+      "keywords": [
+        "大豆"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "参考にできる情報が少ないため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "milk",
+      "slug": "milk",
+      "displayName": "牛乳",
+      "aliases": [
+        "ぎゅうにゅう",
+        "ミルク"
+      ],
+      "keywords": [
+        "乳製品"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "参考にできる情報が少ないため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "low_fat_milk",
+      "slug": "low-fat-milk",
+      "displayName": "低脂肪乳",
+      "aliases": [
+        "ていしぼうにゅう",
+        "低脂肪牛乳"
+      ],
+      "keywords": [
+        "乳製品"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "参考にできる情報が少ないため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "soy_milk",
+      "slug": "soy-milk",
+      "displayName": "豆乳",
+      "aliases": [
+        "とうにゅう",
+        "調製豆乳",
+        "無調整豆乳"
+      ],
+      "keywords": [
+        "大豆"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "参考にできる情報が少ないため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "yogurt",
+      "slug": "yogurt",
+      "displayName": "ヨーグルト",
+      "aliases": [
+        "プレーンヨーグルト"
+      ],
+      "keywords": [
+        "乳製品",
+        "ブルガリア"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 4,
+      "referenceTypicalDays": 5,
+      "referenceMaxDays": 9,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+5日",
+        "typicalApprox": null,
+        "range": "+4〜9日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "drinking_yogurt",
+      "slug": "drinking-yogurt",
+      "displayName": "飲むヨーグルト",
+      "aliases": [
+        "のむよーぐると",
+        "ドリンクヨーグルト"
+      ],
+      "keywords": [
+        "乳製品"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 3,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+3日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "pudding",
+      "slug": "pudding",
+      "displayName": "プリン",
+      "aliases": [
+        "カスタードプリン"
+      ],
+      "keywords": [
+        "デザート"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "fresh_cream",
+      "slug": "fresh-cream",
+      "displayName": "生クリーム",
+      "aliases": [
+        "なまくりーむ",
+        "ホイップクリーム"
+      ],
+      "keywords": [
+        "乳製品"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "butter",
+      "slug": "butter",
+      "displayName": "バター",
+      "aliases": [],
+      "keywords": [
+        "乳製品"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 14,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 30,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+14〜30日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "margarine",
+      "slug": "margarine",
+      "displayName": "マーガリン",
+      "aliases": [
+        "ファットスプレッド"
+      ],
+      "keywords": [],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 14,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 30,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+14〜30日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "sliced_cheese",
+      "slug": "sliced-cheese",
+      "displayName": "スライスチーズ",
+      "aliases": [
+        "チーズ",
+        "とろけるチーズ"
+      ],
+      "keywords": [
+        "乳製品"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 3,
+      "referenceTypicalDays": 7,
+      "referenceMaxDays": 7,
+      "confidence": "HIGH",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+7日",
+        "typicalApprox": null,
+        "range": "+3〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cream_cheese",
+      "slug": "cream-cheese",
+      "displayName": "クリームチーズ",
+      "aliases": [],
+      "keywords": [
+        "乳製品",
+        "チーズ"
+      ],
+      "category": "soy_dairy",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 3,
+      "referenceTypicalDays": 5,
+      "referenceMaxDays": 7,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+5日",
+        "typicalApprox": null,
+        "range": "+3〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "egg",
+      "slug": "egg",
+      "displayName": "卵",
+      "aliases": [
+        "たまご",
+        "玉子",
+        "鶏卵"
+      ],
+      "keywords": [],
+      "category": "egg_processed_meat",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "参考にできる情報が少ないため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "prosciutto",
+      "slug": "prosciutto",
+      "displayName": "生ハム",
+      "aliases": [
+        "なまはむ"
+      ],
+      "keywords": [
+        "肉加工品"
+      ],
+      "category": "egg_processed_meat",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 3,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+3日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "ham",
+      "slug": "ham",
+      "displayName": "ハム",
+      "aliases": [
+        "ロースハム"
+      ],
+      "keywords": [
+        "肉加工品"
+      ],
+      "category": "egg_processed_meat",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 3,
+      "referenceTypicalDays": 7,
+      "referenceMaxDays": 7,
+      "confidence": "HIGH",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+7日",
+        "typicalApprox": null,
+        "range": "+3〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "bacon",
+      "slug": "bacon",
+      "displayName": "ベーコン",
+      "aliases": [],
+      "keywords": [
+        "肉加工品"
+      ],
+      "category": "egg_processed_meat",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 7,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+3日",
+        "typicalApprox": null,
+        "range": "+1〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "sausage",
+      "slug": "sausage",
+      "displayName": "ウインナー",
+      "aliases": [
+        "ウィンナー",
+        "ソーセージ"
+      ],
+      "keywords": [
+        "肉加工品"
+      ],
+      "category": "egg_processed_meat",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 3,
+      "referenceMaxDays": 7,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+3日",
+        "typicalApprox": null,
+        "range": "+1〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "chicken",
+      "slug": "chicken",
+      "displayName": "鶏肉",
+      "aliases": [
+        "とりにく",
+        "鳥肉",
+        "チキン",
+        "鶏もも",
+        "鶏むね"
+      ],
+      "keywords": [
+        "肉"
+      ],
+      "category": "raw_meat_fish",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "生肉・生の魚介類のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "pork",
+      "slug": "pork",
+      "displayName": "豚肉",
+      "aliases": [
+        "ぶたにく",
+        "ポーク",
+        "豚こま",
+        "豚バラ"
+      ],
+      "keywords": [
+        "肉"
+      ],
+      "category": "raw_meat_fish",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "生肉・生の魚介類のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "beef",
+      "slug": "beef",
+      "displayName": "牛肉",
+      "aliases": [
+        "ぎゅうにく",
+        "ビーフ"
+      ],
+      "keywords": [
+        "肉"
+      ],
+      "category": "raw_meat_fish",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "生肉・生の魚介類のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "ground_meat",
+      "slug": "ground-meat",
+      "displayName": "ひき肉",
+      "aliases": [
+        "挽肉",
+        "挽き肉",
+        "ミンチ",
+        "合いびき肉"
+      ],
+      "keywords": [
+        "肉"
+      ],
+      "category": "raw_meat_fish",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "生肉・生の魚介類のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "sashimi",
+      "slug": "sashimi",
+      "displayName": "刺身",
+      "aliases": [
+        "さしみ",
+        "お刺身"
+      ],
+      "keywords": [
+        "魚"
+      ],
+      "category": "raw_meat_fish",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "生肉・生の魚介類のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "raw_fish",
+      "slug": "raw-fish",
+      "displayName": "生魚",
+      "aliases": [
+        "なまざかな",
+        "鮮魚",
+        "切り身"
+      ],
+      "keywords": [
+        "魚"
+      ],
+      "category": "raw_meat_fish",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "生肉・生の魚介類のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "chikuwa",
+      "slug": "chikuwa",
+      "displayName": "ちくわ",
+      "aliases": [
+        "竹輪"
+      ],
+      "keywords": [
+        "練り物"
+      ],
+      "category": "fish_paste_pickles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "kamaboko",
+      "slug": "kamaboko",
+      "displayName": "かまぼこ",
+      "aliases": [
+        "蒲鉾"
+      ],
+      "keywords": [
+        "練り物"
+      ],
+      "category": "fish_paste_pickles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "kanikama",
+      "slug": "kanikama",
+      "displayName": "カニカマ",
+      "aliases": [
+        "かに風味かまぼこ",
+        "カニ風味かまぼこ"
+      ],
+      "keywords": [
+        "練り物"
+      ],
+      "category": "fish_paste_pickles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "kimchi",
+      "slug": "kimchi",
+      "displayName": "キムチ",
+      "aliases": [
+        "白菜キムチ"
+      ],
+      "keywords": [
+        "漬物",
+        "発酵"
+      ],
+      "category": "fish_paste_pickles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 3,
+      "referenceTypicalDays": 7,
+      "referenceMaxDays": 7,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+7日",
+        "typicalApprox": null,
+        "range": "+3〜7日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "pickles",
+      "slug": "pickles",
+      "displayName": "漬物",
+      "aliases": [
+        "つけもの",
+        "お新香",
+        "浅漬け",
+        "たくあん"
+      ],
+      "keywords": [],
+      "category": "fish_paste_pickles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "内容物や製品による差が大きいため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "umeboshi",
+      "slug": "umeboshi",
+      "displayName": "梅干し",
+      "aliases": [
+        "うめぼし",
+        "梅干"
+      ],
+      "keywords": [
+        "漬物"
+      ],
+      "category": "fish_paste_pickles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "製品ごとの差が大きい食品です。",
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30日〜",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "white_bread",
+      "slug": "white-bread",
+      "displayName": "食パン",
+      "aliases": [
+        "しょくぱん"
+      ],
+      "keywords": [
+        "パン"
+      ],
+      "category": "bread",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "roll_bread",
+      "slug": "roll-bread",
+      "displayName": "ロールパン",
+      "aliases": [
+        "バターロール"
+      ],
+      "keywords": [
+        "パン"
+      ],
+      "category": "bread",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "sweet_bread",
+      "slug": "sweet-bread",
+      "displayName": "菓子パン",
+      "aliases": [
+        "かしぱん",
+        "メロンパン",
+        "あんぱん",
+        "クリームパン"
+      ],
+      "keywords": [
+        "パン"
+      ],
+      "category": "bread",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "クリーム・カスタード・惣菜など内容物による差が大きいため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "croissant",
+      "slug": "croissant",
+      "displayName": "クロワッサン",
+      "aliases": [],
+      "keywords": [
+        "パン"
+      ],
+      "category": "bread",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 1,
+      "referenceTypicalDays": 2,
+      "referenceMaxDays": 3,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+2日",
+        "typicalApprox": null,
+        "range": "+1〜3日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "sandwich",
+      "slug": "sandwich",
+      "displayName": "サンドイッチ",
+      "aliases": [
+        "サンドウィッチ"
+      ],
+      "keywords": [
+        "惣菜"
+      ],
+      "category": "deli",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "onigiri",
+      "slug": "onigiri",
+      "displayName": "おにぎり",
+      "aliases": [
+        "おむすび"
+      ],
+      "keywords": [
+        "惣菜"
+      ],
+      "category": "deli",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "bento",
+      "slug": "bento",
+      "displayName": "弁当",
+      "aliases": [
+        "べんとう",
+        "お弁当"
+      ],
+      "keywords": [
+        "惣菜"
+      ],
+      "category": "deli",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "side_dish",
+      "slug": "side-dish",
+      "displayName": "惣菜",
+      "aliases": [
+        "そうざい",
+        "お惣菜",
+        "おかず"
+      ],
+      "keywords": [],
+      "category": "deli",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "salad",
+      "slug": "salad",
+      "displayName": "サラダ",
+      "aliases": [
+        "ポテトサラダ"
+      ],
+      "keywords": [
+        "惣菜"
+      ],
+      "category": "deli",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cut_vegetables",
+      "slug": "cut-vegetables",
+      "displayName": "カット野菜",
+      "aliases": [
+        "かっとやさい",
+        "サラダミックス"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "deli",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "bean_sprouts",
+      "slug": "bean-sprouts",
+      "displayName": "もやし",
+      "aliases": [
+        "モヤシ"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "lettuce",
+      "slug": "lettuce",
+      "displayName": "レタス",
+      "aliases": [],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cabbage",
+      "slug": "cabbage",
+      "displayName": "キャベツ",
+      "aliases": [],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "tomato",
+      "slug": "tomato",
+      "displayName": "トマト",
+      "aliases": [
+        "ミニトマト"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cucumber",
+      "slug": "cucumber",
+      "displayName": "きゅうり",
+      "aliases": [
+        "胡瓜"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "carrot",
+      "slug": "carrot",
+      "displayName": "にんじん",
+      "aliases": [
+        "人参"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "onion",
+      "slug": "onion",
+      "displayName": "玉ねぎ",
+      "aliases": [
+        "たまねぎ",
+        "玉葱"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "potato",
+      "slug": "potato",
+      "displayName": "じゃがいも",
+      "aliases": [
+        "ジャガイモ",
+        "ポテト",
+        "馬鈴薯"
+      ],
+      "keywords": [
+        "野菜"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "banana",
+      "slug": "banana",
+      "displayName": "バナナ",
+      "aliases": [],
+      "keywords": [
+        "果物"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "apple",
+      "slug": "apple",
+      "displayName": "りんご",
+      "aliases": [
+        "林檎"
+      ],
+      "keywords": [
+        "果物"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "mandarin",
+      "slug": "mandarin",
+      "displayName": "みかん",
+      "aliases": [
+        "蜜柑"
+      ],
+      "keywords": [
+        "果物"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示ではなく状態で管理されることが多い食品のため、ネット参考の対象外です。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cut_fruit",
+      "slug": "cut-fruit",
+      "displayName": "カットフルーツ",
+      "aliases": [
+        "かっとふるーつ"
+      ],
+      "keywords": [
+        "果物"
+      ],
+      "category": "produce",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "調理済みで消費期限の対象となることが多い食品のため、ネット参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cooked_rice",
+      "slug": "cooked-rice",
+      "displayName": "ごはん",
+      "aliases": [
+        "ご飯",
+        "ライス"
+      ],
+      "keywords": [
+        "自炊"
+      ],
+      "category": "homemade",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "自炊・調理済みの食品のため、ネット参考の対象外です。ご自身の記録を参考にしてください。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "curry",
+      "slug": "curry",
+      "displayName": "カレー",
+      "aliases": [
+        "カレーライス"
+      ],
+      "keywords": [
+        "自炊"
+      ],
+      "category": "homemade",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "自炊・調理済みの食品のため、ネット参考の対象外です。ご自身の記録を参考にしてください。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "stew",
+      "slug": "stew",
+      "displayName": "シチュー",
+      "aliases": [
+        "クリームシチュー"
+      ],
+      "keywords": [
+        "自炊"
+      ],
+      "category": "homemade",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "自炊・調理済みの食品のため、ネット参考の対象外です。ご自身の記録を参考にしてください。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "miso_soup",
+      "slug": "miso-soup",
+      "displayName": "味噌汁",
+      "aliases": [
+        "みそしる",
+        "みそ汁",
+        "お味噌汁"
+      ],
+      "keywords": [
+        "自炊"
+      ],
+      "category": "homemade",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "自炊・調理済みの食品のため、ネット参考の対象外です。ご自身の記録を参考にしてください。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cooked_pasta",
+      "slug": "cooked-pasta",
+      "displayName": "調理済みパスタ",
+      "aliases": [
+        "ちょうりずみぱすた"
+      ],
+      "keywords": [
+        "自炊",
+        "パスタ"
+      ],
+      "category": "homemade",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "自炊・調理済みの食品のため、ネット参考の対象外です。ご自身の記録を参考にしてください。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "frozen_food",
+      "slug": "frozen-food",
+      "displayName": "冷凍食品",
+      "aliases": [
+        "れいとうしょくひん",
+        "冷食"
+      ],
+      "keywords": [
+        "冷凍"
+      ],
+      "category": "frozen",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "freezer",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 90,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "freezer",
+      "note": "冷凍状態が適切に保たれていることが前提の情報です。家庭用冷凍庫では温度変化があります。",
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜90日",
+        "rangeApprox": null,
+        "condition": "未開封・冷凍の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "ice_cream",
+      "slug": "ice-cream",
+      "displayName": "アイスクリーム",
+      "aliases": [
+        "アイス"
+      ],
+      "keywords": [
+        "冷凍"
+      ],
+      "category": "frozen",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "freezer",
+      "catalogNote": "アイスクリーム類は期限表示が省略されることがあります。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "freezer",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷凍の場合",
+        "hiddenReason": "内容物や製品による差が大きいため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "frozen_udon",
+      "slug": "frozen-udon",
+      "displayName": "冷凍うどん",
+      "aliases": [
+        "れいとううどん"
+      ],
+      "keywords": [
+        "冷凍",
+        "麺"
+      ],
+      "category": "frozen",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "freezer",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "freezer",
+      "note": "冷凍状態が適切に保たれていることが前提の情報です。家庭用冷凍庫では温度変化があります。",
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30日〜",
+        "rangeApprox": null,
+        "condition": "未開封・冷凍の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cup_noodles",
+      "slug": "cup-noodles",
+      "displayName": "カップ麺",
+      "aliases": [
+        "かっぷめん",
+        "カップラーメン",
+        "カップヌードル"
+      ],
+      "keywords": [
+        "麺"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "instant_noodles",
+      "slug": "instant-noodles",
+      "displayName": "袋麺",
+      "aliases": [
+        "ふくろめん",
+        "インスタントラーメン"
+      ],
+      "keywords": [
+        "麺"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 90,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜90日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "dry_pasta",
+      "slug": "dry-pasta",
+      "displayName": "パスタ乾麺",
+      "aliases": [
+        "パスタ",
+        "スパゲッティ",
+        "スパゲティ",
+        "乾燥パスタ"
+      ],
+      "keywords": [
+        "麺",
+        "乾物"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 90,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "未開封・乾燥状態の乾麺が前提です。半生麺・生麺には当てはまりません。",
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+90〜365日",
+        "rangeApprox": "約3か月〜1年",
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "fresh_udon",
+      "slug": "fresh-udon",
+      "displayName": "うどん（生・ゆで）",
+      "aliases": [
+        "うどん",
+        "ゆでうどん",
+        "生うどん"
+      ],
+      "keywords": [
+        "麺"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "内容物や製品による差が大きいため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "fresh_soba",
+      "slug": "fresh-soba",
+      "displayName": "そば（生・ゆで）",
+      "aliases": [
+        "そば",
+        "蕎麦",
+        "ゆでそば",
+        "生そば"
+      ],
+      "keywords": [
+        "麺"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "内容物や製品による差が大きいため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cereal",
+      "slug": "cereal",
+      "displayName": "シリアル",
+      "aliases": [
+        "グラノーラ",
+        "コーンフレーク"
+      ],
+      "keywords": [],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 90,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜90日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "snacks",
+      "slug": "snacks",
+      "displayName": "お菓子",
+      "aliases": [
+        "おかし",
+        "スナック菓子",
+        "ポテトチップス",
+        "クッキー"
+      ],
+      "keywords": [
+        "菓子"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 90,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜90日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "chocolate",
+      "slug": "chocolate",
+      "displayName": "チョコレート",
+      "aliases": [
+        "チョコ"
+      ],
+      "keywords": [
+        "菓子"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 90,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜90日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cake",
+      "slug": "cake",
+      "displayName": "ケーキ",
+      "aliases": [
+        "ショートケーキ",
+        "チーズケーキ",
+        "生菓子"
+      ],
+      "keywords": [
+        "菓子"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "use_by",
+      "defaultStorage": "fridge",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": "内容物や製品による差が大きいため、代表値を設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "bottled_drink",
+      "slug": "bottled-drink",
+      "displayName": "ペットボトル飲料",
+      "aliases": [
+        "ペットボトル",
+        "ジュース",
+        "ペットボトルのお茶"
+      ],
+      "keywords": [
+        "飲料"
+      ],
+      "category": "shelf_stable",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30日〜",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "yaki_nori",
+      "slug": "yaki-nori",
+      "displayName": "焼きのり",
+      "aliases": [
+        "のり",
+        "海苔",
+        "ノリ",
+        "焼海苔",
+        "焼き海苔"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『海苔（のり）』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/178366/"
+        },
+        {
+          "title": "どうぞ召し上がれ「海苔の賞味期限はいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/291"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『海苔』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/nori-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "ajitsuke_nori",
+      "slug": "ajitsuke-nori",
+      "displayName": "味付けのり",
+      "aliases": [
+        "味付け海苔",
+        "あじつけのり"
+      ],
+      "keywords": [
+        "乾物",
+        "のり"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "味付けのりに限った、期限を過ぎた後の期間の情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "katsuobushi",
+      "slug": "katsuobushi",
+      "displayName": "鰹節",
+      "aliases": [
+        "かつおぶし",
+        "カツオブシ",
+        "削り節",
+        "かつお節"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『鰹節』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/katsuobushi-kigen/"
+        },
+        {
+          "title": "小林食品「鰹節の賞味期限は1年！期限切れでも食べられる鰹節の条件」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.kobayashi-foods.co.jp/washoku-no-umami/bonito-best-by-date"
+        },
+        {
+          "title": "にんべん「鰹節の賞味期限はどのくらい？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://shop.ninben.co.jp/blog/katsuobushi/3552/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約7日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": "削り節の例です。",
+        "sources": [
+          {
+            "title": "にんべん「鰹節の賞味期限はどのくらい？」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://shop.ninben.co.jp/blog/katsuobushi/3552/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "kombu",
+      "slug": "kombu",
+      "displayName": "昆布",
+      "aliases": [
+        "こんぶ",
+        "コンブ",
+        "だし昆布"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 365,
+      "referenceMaxDays": 1095,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『昆布』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/214798/"
+        },
+        {
+          "title": "小林食品「昆布の賞味期限ってどれくらい？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.kobayashi-foods.co.jp/washoku-no-umami/konbu-sellby"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+365日",
+        "typicalApprox": "約1年",
+        "range": "+30〜1095日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "dried_wakame",
+      "slug": "dried-wakame",
+      "displayName": "乾燥わかめ",
+      "aliases": [
+        "わかめ",
+        "ワカメ",
+        "乾燥ワカメ"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 60,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『乾燥わかめ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/wakame-kigen/"
+        },
+        {
+          "title": "ちそう「乾燥わかめの賞味期限切れはいつまでOK？」",
+          "sourceType": "MEDIA",
+          "url": "https://chisou-media.jp/posts/9091"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+60日",
+        "typicalApprox": "約2か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "hijiki",
+      "slug": "hijiki",
+      "displayName": "ひじき",
+      "aliases": [
+        "ヒジキ",
+        "乾燥ひじき"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『乾燥ひじき』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/hijiki-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "dried_shiitake",
+      "slug": "dried-shiitake",
+      "displayName": "干ししいたけ",
+      "aliases": [
+        "干し椎茸",
+        "ほししいたけ",
+        "乾燥しいたけ"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 60,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "オリーブオイルをひとまわし「生椎茸や干し椎茸の賞味期限とは」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://www.olive-hitomawashi.com/column/2022/06/post-17102.html"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+60〜180日",
+        "rangeApprox": "約2か月〜6か月",
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "kiriboshi_daikon",
+      "slug": "kiriboshi-daikon",
+      "displayName": "切り干し大根",
+      "aliases": [
+        "きりぼしだいこん",
+        "切干大根"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「切り干し大根の日持ちは？」（野菜ソムリエpro監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/229"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『乾燥切り干し大根』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/kansokiriboshidaikon-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "harusame",
+      "slug": "harusame",
+      "displayName": "春雨",
+      "aliases": [
+        "はるさめ",
+        "ハルサメ"
+      ],
+      "keywords": [
+        "乾物"
+      ],
+      "category": "dried",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "salt",
+      "slug": "salt",
+      "displayName": "塩",
+      "aliases": [
+        "しお",
+        "食塩",
+        "ソルト"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "no_expiration",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_EXPIRATION",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "東京都保健医療局「賞味期限が書かれていない食品があるのは、なぜですか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.hokeniryo.metro.tokyo.lg.jp/anzen/anzen/food_faq/hyoji/hyoji03"
+        }
+      ],
+      "display": {
+        "status": "NO_EXPIRATION",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示なしの食品として、登録からの期間で管理します。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "sugar",
+      "slug": "sugar",
+      "displayName": "砂糖",
+      "aliases": [
+        "さとう",
+        "上白糖",
+        "グラニュー糖",
+        "シュガー"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "no_expiration",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_EXPIRATION",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "東京都保健医療局「賞味期限が書かれていない食品があるのは、なぜですか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.hokeniryo.metro.tokyo.lg.jp/anzen/anzen/food_faq/hyoji/hyoji03"
+        }
+      ],
+      "display": {
+        "status": "NO_EXPIRATION",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限表示なしの食品として、登録からの期間で管理します。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "pepper",
+      "slug": "pepper",
+      "displayName": "こしょう",
+      "aliases": [
+        "胡椒",
+        "コショウ",
+        "ペッパー"
+      ],
+      "keywords": [
+        "調味料",
+        "スパイス"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "メーカーは、こしょうは賞味期限を過ぎても使えるものの、古くなると香りが弱くなるとしています。日数の目安は示されていません。",
+      "sources": [
+        {
+          "title": "ハウス食品 スパイスオブライフ「スパイス何でもQ&A」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.h-spice.jp/inquiry/qa/product.html"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "black_pepper",
+      "slug": "black-pepper",
+      "displayName": "黒こしょう",
+      "aliases": [
+        "ブラックペッパー",
+        "黒胡椒",
+        "くろこしょう"
+      ],
+      "keywords": [
+        "調味料",
+        "スパイス"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "メーカーは、こしょうは賞味期限を過ぎても使えるものの、古くなると香りが弱くなるとしています。日数の目安は示されていません。",
+      "sources": [
+        {
+          "title": "ハウス食品 スパイスオブライフ「スパイス何でもQ&A」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.h-spice.jp/inquiry/qa/product.html"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "ichimi",
+      "slug": "ichimi",
+      "displayName": "一味唐辛子",
+      "aliases": [
+        "一味",
+        "いちみ",
+        "唐辛子"
+      ],
+      "keywords": [
+        "調味料",
+        "スパイス"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "shichimi",
+      "slug": "shichimi",
+      "displayName": "七味唐辛子",
+      "aliases": [
+        "七味",
+        "しちみ",
+        "七味とうがらし"
+      ],
+      "keywords": [
+        "調味料",
+        "スパイス"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "wheat_flour",
+      "slug": "wheat-flour",
+      "displayName": "小麦粉",
+      "aliases": [
+        "こむぎこ",
+        "flour"
+      ],
+      "keywords": [
+        "粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "メーカーは期限後の使用をおすすめしていません。長く置いた粉類は、ダニやカビが発生していることがあります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「小麦粉の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/17"
+        },
+        {
+          "title": "サンキュ！「小麦粉」の賞味期限切れ（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/benesse/72340"
+        },
+        {
+          "title": "日清製粉ウェルナ よくいただくご質問「賞味期限、保存方法について」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.nisshin-seifun-welna.com/index/customer/faq/purpose05.html"
+        },
+        {
+          "title": "ニップン「小麦粉の賞味期限が切れています。使用できますか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://nippn-faq.dga.jp/faq_detail.html?id=180"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cake_flour",
+      "slug": "cake-flour",
+      "displayName": "薄力粉",
+      "aliases": [
+        "はくりきこ"
+      ],
+      "keywords": [
+        "粉",
+        "小麦粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "メーカーは期限後の使用をおすすめしていません。長く置いた粉類は、ダニやカビが発生していることがあります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「小麦粉の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/17"
+        },
+        {
+          "title": "サンキュ！「小麦粉」の賞味期限切れ（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/benesse/72340"
+        },
+        {
+          "title": "日清製粉ウェルナ よくいただくご質問「賞味期限、保存方法について」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.nisshin-seifun-welna.com/index/customer/faq/purpose05.html"
+        },
+        {
+          "title": "ニップン「小麦粉の賞味期限が切れています。使用できますか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://nippn-faq.dga.jp/faq_detail.html?id=180"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "bread_flour",
+      "slug": "bread-flour",
+      "displayName": "強力粉",
+      "aliases": [
+        "きょうりきこ"
+      ],
+      "keywords": [
+        "粉",
+        "小麦粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "強力粉に限った情報は少なく、小麦粉全般の情報をもとにしています。メーカーは期限後の使用をおすすめしていません。長く置いた粉類は、ダニやカビが発生していることがあります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「小麦粉の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/17"
+        },
+        {
+          "title": "サンキュ！「小麦粉」の賞味期限切れ（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/benesse/72340"
+        },
+        {
+          "title": "日清製粉ウェルナ よくいただくご質問「賞味期限、保存方法について」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.nisshin-seifun-welna.com/index/customer/faq/purpose05.html"
+        },
+        {
+          "title": "ニップン「小麦粉の賞味期限が切れています。使用できますか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://nippn-faq.dga.jp/faq_detail.html?id=180"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "potato_starch",
+      "slug": "potato-starch",
+      "displayName": "片栗粉",
+      "aliases": [
+        "かたくりこ"
+      ],
+      "keywords": [
+        "粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「片栗粉の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/190"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『片栗粉』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/katakuriko-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "panko",
+      "slug": "panko",
+      "displayName": "パン粉",
+      "aliases": [
+        "ぱんこ"
+      ],
+      "keywords": [
+        "粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "乾燥パン粉が前提です。生パン粉には当てはまりません。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「パン粉の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/209"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『パン粉』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/178093/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "okonomiyaki_flour",
+      "slug": "okonomiyaki-flour",
+      "displayName": "お好み焼き粉",
+      "aliases": [
+        "おこのみやきこ"
+      ],
+      "keywords": [
+        "粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "ミックス粉は、小麦粉とは別の参考値です。長く置いた粉類は、ダニやカビが発生していることがあります。",
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『お好み焼き粉』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/okonomiyakiko-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "pancake_mix",
+      "slug": "pancake-mix",
+      "displayName": "ホットケーキミックス",
+      "aliases": [
+        "HM",
+        "ホケミ",
+        "パンケーキミックス"
+      ],
+      "keywords": [
+        "粉"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "メーカー（昭和産業）は、期限を過ぎてどれくらい食べられるかは明言できないとしています。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "kinako",
+      "slug": "kinako",
+      "displayName": "きな粉",
+      "aliases": [
+        "きなこ",
+        "黄な粉"
+      ],
+      "keywords": [
+        "粉",
+        "大豆"
+      ],
+      "category": "powder",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "soy_sauce",
+      "slug": "soy-sauce",
+      "displayName": "醤油",
+      "aliases": [
+        "しょうゆ",
+        "しょう油",
+        "soy sauce"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 90,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「醤油の賞味期限は？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/275"
+        },
+        {
+          "title": "macaroni「醤油の賞味期限切れは捨てなきゃダメ？」（フードアナリスト執筆）",
+          "sourceType": "MEDIA",
+          "url": "https://macaro-ni.jp/39224"
+        },
+        {
+          "title": "ニビシ醤油「賞味期限を過ぎたしょうゆはどうしたらいいのですか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.nibishi.co.jp/faq/284/"
+        },
+        {
+          "title": "富士甚醤油「賞味期限は切れていますが蓋を開けていない醤油は使っても大丈夫なのですか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.fujijin.co.jp/qa/456/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+90〜365日",
+        "rangeApprox": "約3か月〜1年",
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": null,
+        "condition": "開封後・冷蔵保存の場合",
+        "note": "商品・容器によって異なります。",
+        "sources": []
+      }
+    },
+    {
+      "foodId": "mentsuyu",
+      "slug": "mentsuyu",
+      "displayName": "めんつゆ",
+      "aliases": [
+        "麺つゆ",
+        "つゆ",
+        "めん汁"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「めんつゆの賞味期限！」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/264"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『めんつゆ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/mentsuyu-kigen/"
+        },
+        {
+          "title": "ヤマキ よくあるご質問",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.yamaki.co.jp/faq/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "14〜60日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": "濃縮・ストレートなど商品で大きく異なり、ストレートは3日以内とする商品もあります。",
+        "sources": [
+          {
+            "title": "ミツカン「主な商品の開封後保管方法と使用目安期間」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://faq.mizkan.co.jp/faq/show/2999?site_domain=default"
+          },
+          {
+            "title": "ヤマキ よくあるご質問",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.yamaki.co.jp/faq/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "shiro_dashi",
+      "slug": "shiro-dashi",
+      "displayName": "白だし",
+      "aliases": [
+        "しろだし",
+        "白出汁"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『白だし』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/shirodashi-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "vinegar",
+      "slug": "vinegar",
+      "displayName": "酢",
+      "aliases": [
+        "す",
+        "お酢",
+        "米酢",
+        "穀物酢"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「酢の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/279"
+        },
+        {
+          "title": "ミツカン「賞味期限を過ぎた商品は食べられますか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://faq.mizkan.co.jp/faq/show/2933?site_domain=default"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約180日",
+        "condition": "開封後・常温保存の場合",
+        "note": "穀物酢・米酢などの例です。冷蔵なら約1年、黒酢などは短めとする情報もあります。",
+        "sources": [
+          {
+            "title": "ミツカン「主な商品の開封後保管方法と使用目安期間」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://faq.mizkan.co.jp/faq/show/2999?site_domain=default"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "cooking_sake",
+      "slug": "cooking-sake",
+      "displayName": "料理酒",
+      "aliases": [
+        "りょうりしゅ",
+        "酒"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": {
+        "value": "約90日",
+        "condition": "開封後・常温保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "日の出みりん「料理酒の賞味期限・保存方法は？」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://hinode-mirin.co.jp/column/ryourizake-column/2023/9690/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "mirin",
+      "slug": "mirin",
+      "displayName": "みりん",
+      "aliases": [
+        "味醂",
+        "ミリン"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "「数週間から数か月」といった幅の広い情報しか見つからなかったため、参考値は設定していません。"
+      },
+      "opened": {
+        "value": "約90日",
+        "condition": "開封後・常温保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "日の出みりん「みりんの賞味期限とは？開栓後の正しい保存方法を知ろう！」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://hinode-mirin.co.jp/column/mirin-column/2022/8925/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "ponzu",
+      "slug": "ponzu",
+      "displayName": "ポン酢",
+      "aliases": [
+        "ぽんず",
+        "ポンズ"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 7,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「ポン酢の賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/226"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『ポン酢』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/214929/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+7〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "30〜120日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": "商品によって1〜4か月と差があります。",
+        "sources": [
+          {
+            "title": "ミツカン「主な商品の開封後保管方法と使用目安期間」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://faq.mizkan.co.jp/faq/show/2999?site_domain=default"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "worcestershire",
+      "slug": "worcestershire",
+      "displayName": "ウスターソース",
+      "aliases": [
+        "ウスター"
+      ],
+      "keywords": [
+        "調味料",
+        "ソース"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『ソース』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/sauce-himochi/"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『ソース』は冷蔵保存でいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/206420/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約60日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ブルドックソース よくあるご質問",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.bulldog.co.jp/company/faq.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "chuno_sauce",
+      "slug": "chuno-sauce",
+      "displayName": "中濃ソース",
+      "aliases": [
+        "ちゅうのうそーす"
+      ],
+      "keywords": [
+        "調味料",
+        "ソース"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『ソース』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/sauce-himochi/"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『ソース』は冷蔵保存でいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/206420/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約30日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ブルドックソース よくあるご質問",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.bulldog.co.jp/company/faq.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "ketchup",
+      "slug": "ketchup",
+      "displayName": "ケチャップ",
+      "aliases": [
+        "トマトケチャップ"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「ケチャップの賞味期限は開封後いつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/181"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『ケチャップ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/ketchup-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約30日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "カゴメ「『トマトケチャップ』は開封後はどのくらいもちますか？」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.kagome.co.jp/customer/qa_ketchup/_11536/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "mayonnaise",
+      "slug": "mayonnaise",
+      "displayName": "マヨネーズ",
+      "aliases": [
+        "マヨ"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 60,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「マヨネーズの賞味期限は？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/266"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『マヨネーズ』」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/benesse/72496"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜60日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約30日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "キユーピー「賞味期限・保存方法などに関するQ&A」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.kewpie.co.jp/customer/faq/sellby/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "dressing",
+      "slug": "dressing",
+      "displayName": "ドレッシング",
+      "aliases": [],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 60,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「ドレッシングの賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/494"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜60日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約30日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "キユーピー「賞味期限・保存方法などに関するQ&A」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.kewpie.co.jp/customer/faq/sellby/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "yakiniku_sauce",
+      "slug": "yakiniku-sauce",
+      "displayName": "焼肉のたれ",
+      "aliases": [
+        "焼き肉のたれ",
+        "やきにくのたれ"
+      ],
+      "keywords": [
+        "調味料",
+        "たれ"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『焼肉のたれ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/yakinikutare-kigen/"
+        },
+        {
+          "title": "エバラ食品 よくあるご質問「賞味期間」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.ebarafoods.com/customer/faq/purpose/syoumi/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約14日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "エバラ食品 よくあるご質問「賞味期間」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.ebarafoods.com/customer/faq/purpose/syoumi/"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "miso",
+      "slug": "miso",
+      "displayName": "味噌",
+      "aliases": [
+        "みそ",
+        "ミソ",
+        "合わせ味噌"
+      ],
+      "keywords": [
+        "調味料",
+        "発酵"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "fridge",
+      "catalogNote": "保存方法は商品によって異なります。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "fridge",
+      "note": "期限を過ぎると色が濃くなることがあります。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「味噌の賞味期限は？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/64"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの味噌は食べれる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/benesse/72338"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・冷蔵の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "doubanjiang",
+      "slug": "doubanjiang",
+      "displayName": "豆板醤",
+      "aliases": [
+        "トウバンジャン",
+        "とうばんじゃん"
+      ],
+      "keywords": [
+        "調味料",
+        "中華"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『豆板醤』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/tobanjan-himochi/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約365日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": "賞味期限のほうが短い場合は、賞味期限までが目安です。",
+        "sources": [
+          {
+            "title": "味の素「Cook Do（中華醤調味料）の保存方法」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://okyakusama.ajinomoto.co.jp/qa/chukaawase/chukajan/025994.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "gochujang",
+      "slug": "gochujang",
+      "displayName": "コチュジャン",
+      "aliases": [],
+      "keywords": [
+        "調味料",
+        "韓国"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "情報源によって記述が大きく異なるため、参考値は設定していません。"
+      },
+      "opened": {
+        "value": "約180日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": "賞味期限のほうが短い場合は、賞味期限までが目安です。",
+        "sources": [
+          {
+            "title": "味の素「Cook Do コチュジャン（韓国醤調味料）の保存方法」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://okyakusama.ajinomoto.co.jp/qa/chukaawase/koreajan/025995.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "oyster_sauce",
+      "slug": "oyster-sauce",
+      "displayName": "オイスターソース",
+      "aliases": [
+        "かき油"
+      ],
+      "keywords": [
+        "調味料",
+        "中華"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『オイスターソース』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/oystersauce-himochi/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約180日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "味の素「Cook Do（中華醤調味料）の保存方法」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://okyakusama.ajinomoto.co.jp/qa/chukaawase/chukajan/025994.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "salad_oil",
+      "slug": "salad-oil",
+      "displayName": "サラダ油",
+      "aliases": [
+        "油",
+        "食用油",
+        "キャノーラ油"
+      ],
+      "keywords": [
+        "油"
+      ],
+      "category": "oil",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "酸化による風味・品質の変化が中心になりやすい食品です。",
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『サラダ油』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/saladoil-kigen/"
+        },
+        {
+          "title": "サンキュ！「賞味期限切れの『サラダ油』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/benesse/28896"
+        },
+        {
+          "title": "日清オイリオ「賞味期限が過ぎた油は使えませんか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.nisshin-oillio.com/customer/faq_detail.html?id=4000001"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "30〜60日",
+        "condition": "開封後・常温保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "J-オイルミルズ よくあるご質問：賞味期限",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.j-oil.com/customer/faq/expiration_date.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "olive_oil",
+      "slug": "olive-oil",
+      "displayName": "オリーブオイル",
+      "aliases": [
+        "オリーブ油",
+        "olive oil"
+      ],
+      "keywords": [
+        "油"
+      ],
+      "category": "oil",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 30,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "酸化による風味・品質の変化が中心になりやすい食品です。",
+      "sources": [
+        {
+          "title": "macaroni「賞味期限切れオリーブオイルはいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://macaro-ni.jp/110543"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "30〜60日",
+        "condition": "開封後・常温保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "J-オイルミルズ よくあるご質問：賞味期限",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.j-oil.com/customer/faq/expiration_date.html"
+          },
+          {
+            "title": "macaroni「賞味期限切れオリーブオイルはいつまで食べられる？」（管理栄養士監修）",
+            "sourceType": "EXPERT_ARTICLE",
+            "url": "https://macaro-ni.jp/110543"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "sesame_oil",
+      "slug": "sesame-oil",
+      "displayName": "ごま油",
+      "aliases": [
+        "ゴマ油",
+        "胡麻油"
+      ],
+      "keywords": [
+        "油"
+      ],
+      "category": "oil",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "酸化による風味・品質の変化が中心になりやすい食品です。",
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『ごま油』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/214856/"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『ごま油』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/gomaabura-himochi/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "30〜60日",
+        "condition": "開封後・常温保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "かどや製油「ごまのQ&A」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.kadoya.com/enjoy/page02.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "wasabi",
+      "slug": "wasabi",
+      "displayName": "わさび",
+      "aliases": [
+        "ワサビ",
+        "山葵",
+        "チューブわさび"
+      ],
+      "keywords": [
+        "調味料",
+        "チューブ"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵の商品が多いです。商品の表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『わさび（チューブ）』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/wasabi-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約90日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ハウス食品「ねりスパイス（チューブ・瓶）は、開封後どのくらいもちますか。」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://housefoods.jp/inquiry/qa/answer_08_05.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "karashi",
+      "slug": "karashi",
+      "displayName": "からし",
+      "aliases": [
+        "カラシ",
+        "辛子",
+        "練りからし"
+      ],
+      "keywords": [
+        "調味料",
+        "チューブ"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵の商品が多いです。商品の表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": {
+        "value": "約90日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ハウス食品「ねりスパイス（チューブ・瓶）は、開封後どのくらいもちますか。」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://housefoods.jp/inquiry/qa/answer_08_05.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "ginger",
+      "slug": "ginger",
+      "displayName": "しょうが",
+      "aliases": [
+        "生姜",
+        "ショウガ",
+        "おろし生姜"
+      ],
+      "keywords": [
+        "調味料",
+        "チューブ"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵の商品が多いです。商品の表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『生姜チューブ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/gingertube-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約30日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ハウス食品「ねりスパイス（チューブ・瓶）は、開封後どのくらいもちますか。」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://housefoods.jp/inquiry/qa/answer_08_05.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "garlic",
+      "slug": "garlic",
+      "displayName": "にんにく",
+      "aliases": [
+        "ニンニク",
+        "大蒜",
+        "ガーリック",
+        "おろしにんにく"
+      ],
+      "keywords": [
+        "調味料",
+        "チューブ"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵の商品が多いです。商品の表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『にんにくチューブ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/garictube-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約30日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ハウス食品「ねりスパイス（チューブ・瓶）は、開封後どのくらいもちますか。」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://housefoods.jp/inquiry/qa/answer_08_05.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "tuna_can",
+      "slug": "tuna-can",
+      "displayName": "ツナ缶",
+      "aliases": [
+        "シーチキン",
+        "ツナ"
+      ],
+      "keywords": [
+        "缶詰"
+      ],
+      "category": "canned",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の表示を確認してください（別の容器への移し替えが必要な場合があります）。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "缶の膨張・大きな変形・漏れ・強いさびなど異常がある場合は、日数に関係なくこの参考値は当てはまりません。",
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『ツナ缶』はいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/206399/"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『ツナ缶』いつまで食べられる？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/tuna-kigen/"
+        },
+        {
+          "title": "日本缶詰びん詰レトルト食品協会「賞味期限が切れた缶詰やびん詰、レトルト食品は食べられますか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.jca-can.or.jp/useful/qa/1092"
+        },
+        {
+          "title": "マルハニチロ お客様相談室「賞味期限を過ぎた缶詰は食べられますか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://club.umios.com/article/smart_blog/qa/9709/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "mackerel_can",
+      "slug": "mackerel-can",
+      "displayName": "サバ缶",
+      "aliases": [
+        "鯖缶",
+        "さば缶"
+      ],
+      "keywords": [
+        "缶詰"
+      ],
+      "category": "canned",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の表示を確認してください（別の容器への移し替えが必要な場合があります）。",
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "業界団体・メーカーは、未開封で缶に異常がなければ期限後すぐに食べられなくなるわけではないとしています。期間の目安は示されていません。缶の膨張・大きな変形・漏れ・強いさびなど異常がある場合は、日数に関係なくこの参考値は当てはまりません。",
+      "sources": [
+        {
+          "title": "日本缶詰びん詰レトルト食品協会「賞味期限が切れた缶詰やびん詰、レトルト食品は食べられますか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.jca-can.or.jp/useful/qa/1092"
+        },
+        {
+          "title": "マルハニチロ お客様相談室「賞味期限を過ぎた缶詰は食べられますか？」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://club.umios.com/article/smart_blog/qa/9709/"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "tomato_can",
+      "slug": "tomato-can",
+      "displayName": "トマト缶",
+      "aliases": [
+        "ホールトマト",
+        "カットトマト"
+      ],
+      "keywords": [
+        "缶詰"
+      ],
+      "category": "canned",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の表示を確認してください（別の容器への移し替えが必要な場合があります）。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 365,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "缶の膨張・大きな変形・漏れ・強いさびなど異常がある場合は、日数に関係なくこの参考値は当てはまりません。",
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『トマト缶』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/tomatocan-kigen/"
+        },
+        {
+          "title": "日本缶詰びん詰レトルト食品協会「賞味期限が切れた缶詰やびん詰、レトルト食品は食べられますか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.jca-can.or.jp/useful/qa/1092"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "corn_can",
+      "slug": "corn-can",
+      "displayName": "コーン缶",
+      "aliases": [
+        "とうもろこし缶",
+        "スイートコーン"
+      ],
+      "keywords": [
+        "缶詰"
+      ],
+      "category": "canned",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の表示を確認してください（別の容器への移し替えが必要な場合があります）。",
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "業界団体・メーカーは、未開封で缶に異常がなければ期限後すぐに食べられなくなるわけではないとしています。期間の目安は示されていません。缶の膨張・大きな変形・漏れ・強いさびなど異常がある場合は、日数に関係なくこの参考値は当てはまりません。",
+      "sources": [
+        {
+          "title": "日本缶詰びん詰レトルト食品協会「賞味期限が切れた缶詰やびん詰、レトルト食品は食べられますか？」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.jca-can.or.jp/useful/qa/1092"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "jam",
+      "slug": "jam",
+      "displayName": "ジャム",
+      "aliases": [
+        "いちごジャム",
+        "ブルーベリージャム"
+      ],
+      "keywords": [
+        "瓶詰"
+      ],
+      "category": "canned",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は冷蔵保存の商品が多いです。商品の保存表示を確認してください。",
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『ジャム』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/178336/"
+        },
+        {
+          "title": "アヲハタ 商品に関するQ&A",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.aohata.co.jp/inquiry/q_a_product.html"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約14日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "アヲハタ 商品に関するQ&A",
+            "sourceType": "MANUFACTURER",
+            "url": "https://www.aohata.co.jp/inquiry/q_a_product.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "honey",
+      "slug": "honey",
+      "displayName": "はちみつ",
+      "aliases": [
+        "蜂蜜",
+        "ハチミツ",
+        "honey"
+      ],
+      "keywords": [
+        "瓶詰"
+      ],
+      "category": "canned",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": "開封後は商品の保存表示を確認してください。",
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "はちみつは非常に保存性が高く、賞味期限後も品質・風味の変化を中心に確認する食品です。",
+      "sources": [
+        {
+          "title": "くふう トクバイニュース「賞味期限が切れたはちみつはいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://tokubai.co.jp/news/articles/6596"
+        },
+        {
+          "title": "ヨガジャーナルオンライン「『はちみつは腐らない』ウソ？本当？」（管理栄養士解説）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://yogajournal.jp/18494"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "instant_coffee",
+      "slug": "instant-coffee",
+      "displayName": "インスタントコーヒー",
+      "aliases": [
+        "コーヒー",
+        "珈琲"
+      ],
+      "keywords": [
+        "飲料"
+      ],
+      "category": "beverage",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "メーカーは、未開封なら乾物のため腐ることはないものの、風味が落ちるためおすすめはしないとしています。日数の目安は示されていません。",
+      "sources": [
+        {
+          "title": "キーコーヒー「コーヒーの賞味期限が切れました。未開封ですが飲めますか。」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.keycoffee.co.jp/inquiry/question02/02q23/"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "coffee_beans",
+      "slug": "coffee-beans",
+      "displayName": "コーヒー豆",
+      "aliases": [
+        "珈琲豆",
+        "coffee beans",
+        "コーヒー粉"
+      ],
+      "keywords": [
+        "飲料"
+      ],
+      "category": "beverage",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "メーカーは、未開封なら乾物のため腐ることはないものの、風味が落ちるためおすすめはしないとしています。日数の目安は示されていません。",
+      "sources": [
+        {
+          "title": "キーコーヒー「コーヒーの賞味期限が切れました。未開封ですが飲めますか。」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.keycoffee.co.jp/inquiry/question02/02q23/"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "black_tea",
+      "slug": "black-tea",
+      "displayName": "紅茶",
+      "aliases": [
+        "ティーバッグ",
+        "tea"
+      ],
+      "keywords": [
+        "飲料",
+        "茶葉"
+      ],
+      "category": "beverage",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 180,
+      "referenceTypicalDays": 365,
+      "referenceMaxDays": 1095,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「紅茶の賞味期限切れはいつまで飲める？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/25"
+        },
+        {
+          "title": "伊藤園 お客様相談室 よくいただくご質問",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.itoen.jp/customer/faq/purpose/4945/5007/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+365日",
+        "typicalApprox": "約1年",
+        "range": "+180〜1095日",
+        "rangeApprox": "約6か月〜3年",
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "green_tea",
+      "slug": "green-tea",
+      "displayName": "緑茶",
+      "aliases": [
+        "茶葉",
+        "お茶"
+      ],
+      "keywords": [
+        "飲料"
+      ],
+      "category": "beverage",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 365,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「お茶の賞味期限切れはいつまで飲める？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/340"
+        },
+        {
+          "title": "伊藤園 お客様相談室 よくいただくご質問",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.itoen.jp/customer/faq/purpose/4945/5007/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜365日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "barley_tea",
+      "slug": "barley-tea",
+      "displayName": "麦茶",
+      "aliases": [
+        "麦茶パック"
+      ],
+      "keywords": [
+        "飲料"
+      ],
+      "category": "beverage",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "cocoa",
+      "slug": "cocoa",
+      "displayName": "ココア",
+      "aliases": [
+        "純ココア",
+        "cocoa"
+      ],
+      "keywords": [
+        "飲料"
+      ],
+      "category": "beverage",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "サンキュ！「賞味期限切れの『ココア』はいつまで大丈夫？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://39mag.thankyu.co.jp/article/recipes/cooking_method/185079/"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『ココアパウダー』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/cocoa-kigen/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "rice",
+      "slug": "rice",
+      "displayName": "米",
+      "aliases": [
+        "こめ",
+        "お米",
+        "白米",
+        "精米"
+      ],
+      "keywords": [
+        "穀類"
+      ],
+      "category": "grain",
+      "typicalDeadlineType": "no_expiration",
+      "defaultStorage": "room",
+      "catalogNote": "精米は袋の精米年月日を目安にする人が多い食品です。",
+      "referenceMode": "QUALITY_BASED",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "農林水産省「玄米及び精米の年月旬表示の導入について」",
+          "sourceType": "PUBLIC",
+          "url": "https://www.maff.go.jp/j/syouan/keikaku/soukatu/200414.html"
+        }
+      ],
+      "display": {
+        "status": "QUALITY_BASED",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "精米日などから品質が変化していく食品として扱うため、「+○日」のネット参考値は設けていません。"
+      },
+      "opened": null
+    },
+    {
+      "foodId": "mochi",
+      "slug": "mochi",
+      "displayName": "餅",
+      "aliases": [
+        "もち",
+        "切り餅",
+        "モチ"
+      ],
+      "keywords": [
+        "穀類"
+      ],
+      "category": "grain",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "個包装された市販の切り餅などが前提です。生餅・手作りの餅には当てはまりません。",
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「切り餅の賞味期限切れはいつまで食べられる？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/113"
+        },
+        {
+          "title": "サトウ食品 よくあるご質問",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.satosyokuhin.co.jp/inquiry/faq/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "somen",
+      "slug": "somen",
+      "displayName": "そうめん",
+      "aliases": [
+        "素麺",
+        "ソーメン"
+      ],
+      "keywords": [
+        "乾麺",
+        "麺"
+      ],
+      "category": "dry_noodles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "管理栄養士の記事では「賞味期間の1.3〜1.5倍」、乾麺メーカーは「期限を過ぎても品質が極端に劣ることはない」としています。未開封・乾燥状態の乾麺が前提です。半生麺・生麺には当てはまりません。",
+      "sources": [
+        {
+          "title": "macaroni「『そうめん』の賞味期限切れは食べられる？」（管理栄養士執筆）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://macaro-ni.jp/77279"
+        },
+        {
+          "title": "木下製粉「乾麺の賞味期限その①・・・3年経過した乾燥うどん」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.flour.co.jp/news/article/290/"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "dry_soba",
+      "slug": "dry-soba",
+      "displayName": "乾麺そば",
+      "aliases": [
+        "蕎麦",
+        "そば",
+        "乾燥そば"
+      ],
+      "keywords": [
+        "乾麺",
+        "麺"
+      ],
+      "category": "dry_noodles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "管理栄養士の記事では「賞味期間の1.3〜1.5倍」、乾麺メーカーは「期限を過ぎても品質が極端に劣ることはない」としています。未開封・乾燥状態の乾麺が前提です。半生麺・生麺には当てはまりません。",
+      "sources": [
+        {
+          "title": "macaroni「『そうめん』の賞味期限切れは食べられる？」（管理栄養士執筆）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://macaro-ni.jp/77279"
+        },
+        {
+          "title": "木下製粉「乾麺の賞味期限その①・・・3年経過した乾燥うどん」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.flour.co.jp/news/article/290/"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "dry_udon",
+      "slug": "dry-udon",
+      "displayName": "乾麺うどん",
+      "aliases": [
+        "うどん",
+        "乾燥うどん"
+      ],
+      "keywords": [
+        "乾麺",
+        "麺"
+      ],
+      "category": "dry_noodles",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "NO_FIXED_LIMIT",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": "管理栄養士の記事では「賞味期間の1.3〜1.5倍」、乾麺メーカーは「期限を過ぎても品質が極端に劣ることはない」としています。未開封・乾燥状態の乾麺が前提です。半生麺・生麺には当てはまりません。",
+      "sources": [
+        {
+          "title": "macaroni「『そうめん』の賞味期限切れは食べられる？」（管理栄養士執筆）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://macaro-ni.jp/77279"
+        },
+        {
+          "title": "木下製粉「乾麺の賞味期限その①・・・3年経過した乾燥うどん」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.flour.co.jp/news/article/290/"
+        }
+      ],
+      "display": {
+        "status": "NO_FIXED_LIMIT",
+        "typical": "一律の日数目安なし",
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "curry_roux",
+      "slug": "curry-roux",
+      "displayName": "カレールー",
+      "aliases": [
+        "カレー",
+        "ルー",
+        "カレールウ"
+      ],
+      "keywords": [
+        "調味食品"
+      ],
+      "category": "seasoning_food",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 180,
+      "referenceMaxDays": 180,
+      "confidence": "MEDIUM",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "どうぞ召し上がれ「カレールーの賞味期限切れはいつまで？」（管理栄養士監修）",
+          "sourceType": "EXPERT_ARTICLE",
+          "url": "https://douzo.dinos.co.jp/posts/80"
+        },
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『カレールー』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/curryru-himochi/"
+        },
+        {
+          "title": "ハウス食品「カレールウの正しい保存方法と賞味期限」",
+          "sourceType": "MANUFACTURER",
+          "url": "https://housefoods.jp/data/curryhouse/enjoy/roux_hozon.html"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+180日",
+        "typicalApprox": "約6か月",
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": {
+        "value": "約90日",
+        "condition": "開封後・冷蔵保存の場合",
+        "note": null,
+        "sources": [
+          {
+            "title": "ハウス食品「カレールウの正しい保存方法と賞味期限」",
+            "sourceType": "MANUFACTURER",
+            "url": "https://housefoods.jp/data/curryhouse/enjoy/roux_hozon.html"
+          }
+        ]
+      }
+    },
+    {
+      "foodId": "consomme",
+      "slug": "consomme",
+      "displayName": "コンソメ",
+      "aliases": [
+        "ブイヨン",
+        "スープの素"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": 30,
+      "referenceTypicalDays": 30,
+      "referenceMaxDays": 180,
+      "confidence": "LOW",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [
+        {
+          "title": "おうちごはん研究所「賞味期限切れの『コンソメ』いつまで使える？」",
+          "sourceType": "MEDIA",
+          "url": "https://ouchigohan-lab.jp/consomme-himochi/"
+        }
+      ],
+      "display": {
+        "status": "VALUE",
+        "typical": "+30日",
+        "typicalApprox": null,
+        "range": "+30〜180日",
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": null
+      },
+      "opened": null
+    },
+    {
+      "foodId": "dashi_powder",
+      "slug": "dashi-powder",
+      "displayName": "だしの素",
+      "aliases": [
+        "顆粒だし",
+        "和風だし",
+        "ほんだし"
+      ],
+      "keywords": [
+        "調味料"
+      ],
+      "category": "seasoning",
+      "typicalDeadlineType": "best_before",
+      "defaultStorage": "room",
+      "catalogNote": null,
+      "referenceMode": "DAYS",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
+      "assumedOpenedStatus": "unopened",
+      "assumedStorage": "room",
+      "note": null,
+      "sources": [],
+      "display": {
+        "status": "NONE",
+        "typical": null,
+        "typicalApprox": null,
+        "range": null,
+        "rangeApprox": null,
+        "condition": "未開封・常温の場合",
+        "hiddenReason": "期限を過ぎた後の期間について、根拠になる情報が見つからなかったため、参考値は設定していません。"
+      },
+      "opened": null
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+/* KIGEN+ 公式サイト。色はアプリ（src/constants/theme.ts）と同じ */
+:root {
+  --bg: #efe9dc;          /* くすんだアイボリー */
+  --card: #f9f5ec;
+  --text: #2e2b28;        /* ダークチャコール */
+  --sub: #6f6a62;
+  --muted: #857f75;
+  --border: #e0d8c8;
+  --accent: #c4643a;      /* テラコッタ */
+  --accent-strong: #a9512c; /* 白文字を載せるとき（コントラスト確保） */
+  --accent-soft: #f3dfd2;
+  --neutral-soft: #e7e0d1;
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --shadow: 0 10px 30px rgba(46, 43, 40, 0.08);
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--accent-strong); text-underline-offset: 3px; }
+a:hover { color: var(--text); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { line-height: 1.4; margin: 0; }
+p { margin: 0 0 1em; }
+
+.wrap { width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+.narrow { max-width: 680px; }
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip { position: absolute; left: -9999px; top: 0; background: var(--text); color: #fff; padding: 8px 12px; z-index: 10; }
+.skip:focus { left: 8px; top: 8px; }
+.small { font-size: 14px; }
+.muted { color: var(--sub); }
+.center { text-align: center; }
+
+/* ---- ヘッダー・フッター ---- */
+.site-header { padding: 10px 0; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; }
+.logo, .footer-logo, .hero-brand, .final-brand, .cta-brand {
+  font-weight: 900; letter-spacing: 0.04em; color: var(--text); text-decoration: none;
+}
+.logo { font-size: 24px; line-height: 1; padding: 8px 0; }
+.logo span, .footer-logo span, .hero-brand span, .final-brand span, .cta-brand span { color: var(--accent); }
+.nav { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
+.nav a {
+  display: block; padding: 8px 10px; border-radius: 999px; color: var(--text);
+  text-decoration: none; font-size: 14px; font-weight: 700; white-space: nowrap;
+}
+.nav a:hover { background: var(--neutral-soft); }
+@media (max-width: 380px) { .nav a { padding: 8px 6px; font-size: 13px; } }
+
+.site-footer { margin-top: 48px; padding: 32px 0 40px; border-top: 1px solid var(--border); font-size: 14px; color: var(--sub); }
+.footer-logo { font-size: 20px; margin-bottom: 12px; }
+.footer-logo small { font-size: 12px; font-weight: 400; color: var(--sub); letter-spacing: 0.15em; margin-left: 8px; }
+.footer-links { list-style: none; padding: 0; margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.footer-links a { color: var(--text); display: inline-block; padding: 6px 0; }
+.footer-note { margin-bottom: 6px; }
+.copyright { margin: 12px 0 0; font-size: 12px; }
+
+.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px; padding: 0; margin: 4px 0 0; font-size: 13px; color: var(--sub); }
+.breadcrumb li + li::before { content: "›"; margin-right: 4px; color: var(--muted); }
+.breadcrumb a { color: var(--sub); }
+
+/* ---- ボタン ---- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 52px; padding: 12px 28px; border-radius: 999px; border: 0;
+  font: inherit; font-weight: 800; font-size: 17px; text-decoration: none; cursor: pointer;
+  transition: transform .15s ease, background-color .15s ease;
+}
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--accent-strong); color: #fff; }
+.btn-primary:hover { background: #923f1f; color: #fff; }
+.btn-light { background: var(--card); color: var(--text); }
+.btn-light:hover { background: #fff; color: var(--text); }
+.btn-small { min-height: 48px; padding: 8px 18px; font-size: 15px; }
+.store-fallback { display: inline-block; background: var(--card); border: 1px solid var(--border); border-radius: 999px; padding: 12px 20px; font-weight: 700; margin: 0; }
+
+/* ---- TOP ---- */
+.hero { padding: 16px 0 40px; overflow: hidden; }
+.hero-inner { display: grid; gap: 32px; align-items: center; }
+.hero-brand { font-size: 56px; line-height: 1; }
+.hero-brand small, .final-brand small {
+  display: block; font-size: 15px; font-weight: 500; letter-spacing: 0.3em; color: var(--sub); margin-top: 12px;
+}
+.hero-catch { font-size: 26px; font-weight: 800; line-height: 1.5; margin: 28px 0 16px; }
+.hero-catch em, .feature-num { font-style: normal; color: var(--accent); }
+.hero-lead { color: var(--sub); }
+.hero-sub { font-size: 13px; color: var(--sub); margin-top: 12px; }
+.cta-row { margin-top: 24px; }
+.cta-center { text-align: center; margin-top: 32px; }
+
+.phone {
+  margin: 0 auto; width: min(280px, 78vw);
+  border-radius: 36px; overflow: hidden; background: var(--card);
+  border: 8px solid var(--card); box-shadow: 0 20px 50px rgba(46, 43, 40, 0.16);
+}
+.hero .phone { position: relative; }
+
+.section { padding: 56px 0; }
+.section-title { font-size: 26px; text-align: center; margin-bottom: 24px; }
+.features { background: var(--card); border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+.feature-list { display: grid; gap: 56px; margin-top: 40px; }
+.feature { display: grid; gap: 24px; align-items: center; }
+.feature h3 { font-size: 22px; margin: 4px 0 12px; }
+.feature-num { font-weight: 900; font-size: 15px; letter-spacing: 0.1em; margin: 0; }
+.feature p { color: var(--sub); }
+.feature .phone { width: min(240px, 66vw); background: var(--bg); border-color: var(--bg); }
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; }
+.chips li { background: var(--accent-strong); color: #fff; font-weight: 800; border-radius: var(--radius-sm); padding: 4px 14px; }
+
+.foodloss { text-align: center; }
+.foodloss .section-title { margin-bottom: 16px; }
+.foodloss p { color: var(--sub); }
+
+.search-entry { background: var(--card); border-radius: var(--radius-lg); margin: 0 16px; }
+.search-entry > .wrap > p { text-align: center; color: var(--sub); }
+.more-link { text-align: center; margin-top: 20px; font-weight: 700; }
+
+.final-cta { text-align: center; }
+.final-brand { font-size: 44px; line-height: 1; margin-bottom: 24px; }
+.final-cta p { font-size: 18px; font-weight: 700; }
+.final-cta .final-note { font-size: 13px; font-weight: 400; color: var(--sub); margin-top: 24px; }
+.final-cta .btn-light { border: 2px solid var(--accent-strong); color: var(--accent-strong); }
+
+@media (min-width: 760px) {
+  .hero { padding: 32px 0 64px; }
+  .hero-inner { grid-template-columns: 1.1fr 0.9fr; gap: 48px; }
+  .hero-brand { font-size: 80px; }
+  .hero-catch { font-size: 34px; }
+  .phone { width: 300px; }
+  .feature { grid-template-columns: 1fr 1fr; gap: 48px; }
+  .feature-reverse .feature-text { order: 2; }
+  .feature .phone { width: 260px; }
+  .feature h3 { font-size: 28px; }
+  .section-title { font-size: 32px; }
+  .search-entry { margin: 0 auto; max-width: 1008px; }
+}
+
+/* ---- 検索フォーム・食品チップ ---- */
+.search-form { display: flex; gap: 8px; margin: 8px 0 4px; }
+.search-form input {
+  flex: 1; min-width: 0; min-height: 52px; padding: 10px 20px;
+  font: inherit; font-size: 16px; color: var(--text);
+  background: var(--card); border: 1.5px solid var(--border); border-radius: 999px;
+}
+.search-entry .search-form input { background: var(--bg); }
+.search-form input::placeholder { color: var(--muted); }
+.search-form input:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px var(--accent-soft); }
+.search-status { min-height: 1.5em; font-size: 14px; color: var(--sub); margin: 4px 8px 8px; }
+.food-chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 16px 0 0; justify-content: center; }
+.food-chips a {
+  display: inline-block; padding: 8px 16px; min-height: 44px; border-radius: 999px;
+  background: var(--card); border: 1px solid var(--border); color: var(--text);
+  text-decoration: none; font-weight: 700;
+}
+.search-entry .food-chips a { background: var(--bg); }
+.food-chips a:hover { border-color: var(--accent); color: var(--accent-strong); }
+
+/* ---- 下層ページ共通 ---- */
+.page { padding-top: 8px; }
+.page-title { font-size: 28px; margin: 8px 0 12px; }
+.page-lead { color: var(--sub); font-size: 15px; }
+.prose h2 { font-size: 20px; margin: 36px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+.prose h3 { font-size: 17px; margin: 24px 0 6px; }
+.prose ul { padding-left: 1.4em; }
+.prose .lead { font-size: 18px; font-weight: 700; }
+.prose .note { margin-top: 32px; color: var(--sub); font-size: 14px; }
+.big-code { font-size: 72px; font-weight: 900; color: var(--accent); margin: 24px 0 0; line-height: 1; }
+
+/* ---- 食品一覧 ---- */
+.list-title { font-size: 17px; margin: 32px 0 12px; color: var(--sub); }
+.popular .food-chips { justify-content: flex-start; margin-top: 0; }
+.food-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.food-item > a, .food-item > div {
+  display: grid; gap: 2px; padding: 14px 44px 14px 20px; position: relative;
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius);
+  color: var(--text); text-decoration: none;
+}
+.food-item > a::after {
+  content: ""; position: absolute; right: 20px; top: 50%; width: 9px; height: 9px;
+  border-right: 2px solid var(--muted); border-top: 2px solid var(--muted); transform: translateY(-50%) rotate(45deg);
+}
+.food-item > a:hover { border-color: var(--accent); }
+.food-item.is-plain > div { padding-right: 20px; background: transparent; }
+.item-name { font-size: 18px; font-weight: 800; }
+.item-ref { font-size: 15px; }
+.item-ref b { font-size: 17px; }
+.item-range { color: var(--sub); font-size: 14px; margin-left: 4px; }
+.item-cond { font-size: 13px; color: var(--sub); }
+.is-plain .item-ref { color: var(--sub); font-size: 14px; }
+.no-ref summary { cursor: pointer; list-style: none; }
+.no-ref summary::-webkit-details-marker { display: none; }
+.no-ref summary h2 { display: inline; }
+.no-ref summary::before { content: "＋"; color: var(--accent); font-weight: 900; margin-right: 6px; }
+.no-ref[open] summary::before { content: "－"; }
+.no-ref > summary { margin: 32px 0 12px; }
+.no-ref .list-title { margin: 0; }
+.search-empty { text-align: center; color: var(--sub); margin: 24px 0; }
+.list-foot { margin-top: 32px; }
+
+/* ---- 食品詳細 ---- */
+.food-name { font-size: 32px; margin: 4px 0 12px; }
+.ref-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 20px 20px 16px; text-align: center; box-shadow: var(--shadow);
+}
+.ref-label { font-size: 15px; color: var(--sub); font-weight: 700; }
+.ref-value { font-size: 52px; font-weight: 900; line-height: 1.15; margin: 4px 0 0; letter-spacing: 0.01em; }
+.ref-value small { display: block; font-size: 16px; font-weight: 500; color: var(--sub); letter-spacing: 0; }
+.ref-value-text { font-size: 26px; margin: 8px 0; }
+.ref-value-sub { font-size: 14px; color: var(--sub); margin: 0 0 12px; }
+.ref-rows { margin: 0 0 12px; text-align: left; border-top: 1px solid var(--border); }
+.ref-rows > div { display: grid; grid-template-columns: 6em 1fr; gap: 8px; padding: 10px 4px; border-bottom: 1px solid var(--border); }
+.ref-rows dt { color: var(--sub); font-size: 14px; padding-top: 2px; }
+.ref-rows dd { margin: 0; font-size: 16px; }
+.ref-rows dd b { font-size: 18px; }
+.ref-rows small { color: var(--sub); font-size: 13px; }
+.ref-note { text-align: left; font-size: 14px; color: var(--sub); margin: 0 0 8px; }
+.caution {
+  text-align: left; font-size: 13px; color: var(--sub); background: var(--neutral-soft);
+  border-radius: var(--radius-sm); padding: 10px 14px; margin: 8px 0 0; line-height: 1.7;
+}
+
+.sources { margin-top: 14px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+.sources > summary {
+  cursor: pointer; list-style: none; padding: 12px 20px; min-height: 48px; display: flex; align-items: center; justify-content: space-between;
+}
+.sources > summary::-webkit-details-marker { display: none; }
+.sources > summary::after { content: "＋"; color: var(--accent); font-weight: 900; }
+.sources[open] > summary::after { content: "－"; }
+.sources-title { font-size: 15px; font-weight: 700; display: inline; }
+.sources-body { padding: 0 20px 12px; font-size: 14px; color: var(--sub); }
+.source-list { padding-left: 1.2em; margin: 0 0 12px; color: var(--text); }
+.source-list li { margin-bottom: 6px; }
+.source-type { color: var(--sub); font-size: 13px; }
+.sources-inline { margin-top: 10px; background: transparent; }
+.sources-inline > summary { font-size: 14px; padding: 8px 16px; min-height: 44px; }
+
+.sub-title { font-size: 18px; margin: 32px 0 10px; }
+.opened { margin-top: 8px; }
+.opened-value { font-size: 22px; font-weight: 800; margin-bottom: 6px; }
+.opened-value small { display: block; font-size: 14px; font-weight: 400; color: var(--sub); }
+
+.cta-card {
+  margin-top: 36px; text-align: center; background: var(--accent-soft);
+  border-radius: var(--radius-lg); padding: 28px 20px;
+}
+.cta-card h2 { font-size: 21px; margin-bottom: 12px; }
+.cta-card p { font-size: 15px; color: var(--text); }
+.cta-brand { font-size: 32px; margin-bottom: 4px; }
+.related .food-chips { justify-content: flex-start; margin-top: 0; }
+.back-link { margin-top: 28px; font-weight: 700; }
+
+@media (min-width: 760px) {
+  .food-name { font-size: 38px; }
+  .ref-card { padding: 28px 40px 24px; }
+  .ref-value { font-size: 64px; }
+}

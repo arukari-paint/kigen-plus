@@ -1,0 +1,22 @@
+{
+  "name": "kigen-plus-website",
+  "private": true,
+  "type": "module",
+  "description": "KIGEN+ 公式Webサイト（静的サイト）",
+  "engines": {
+    "node": ">=22.16"
+  },
+  "scripts": {
+    "data": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/export-app-data.ts",
+    "build": "node --experimental-strip-types --disable-warning=ExperimentalWarning src/build.ts",
+    "serve": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/serve.ts",
+    "dev": "npm run build && npm run serve",
+    "check": "node --experimental-strip-types --disable-warning=ExperimentalWarning scripts/check.ts",
+    "typecheck": "tsc --noEmit",
+    "images": "sh scripts/make-images.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "~6.0.3"
+  }
+}
