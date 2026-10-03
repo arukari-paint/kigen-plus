@@ -1,5 +1,5 @@
 {
-  "datasetVersion": "1.3.1",
+  "datasetVersion": "1.3.2",
   "lastReviewedAt": "2026-10-03",
   "texts": {
     "definition": "ネット上の期限超過後の喫食情報等をもとにした参考値です。",
@@ -1290,26 +1290,37 @@
         "パン"
       ],
       "category": "bread",
-      "typicalDeadlineType": "best_before",
+      "typicalDeadlineType": "use_by",
       "defaultStorage": "room",
-      "catalogNote": null,
+      "catalogNote": "大手メーカーのパンは消費期限の表示が多い食品です。",
       "referenceMode": "DAYS",
-      "referenceMinDays": 1,
-      "referenceTypicalDays": 2,
-      "referenceMaxDays": 3,
-      "confidence": "LOW",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "room",
       "note": null,
-      "sources": [],
+      "sources": [
+        {
+          "title": "山崎製パン お客様相談室「よくあるご質問」（消費期限について）",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.yamazakipan.co.jp/otoiawase/main2.html"
+        },
+        {
+          "title": "フジパン「よくあるご質問」（消費期限について）",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.fujipan.co.jp/faq/"
+        }
+      ],
       "display": {
-        "status": "VALUE",
-        "typical": "+2日",
+        "status": "NONE",
+        "typical": null,
         "typicalApprox": null,
-        "range": "+1〜3日",
+        "range": null,
         "rangeApprox": null,
         "condition": "未開封・常温の場合",
-        "hiddenReason": null
+        "hiddenReason": "大手メーカーのパンは消費期限が表示されていることが多く、メーカーは期限を過ぎたら食べないよう案内しているため、ネット参考値は設定していません。"
       },
       "opened": null
     },
@@ -1359,26 +1370,37 @@
         "パン"
       ],
       "category": "bread",
-      "typicalDeadlineType": "best_before",
+      "typicalDeadlineType": "use_by",
       "defaultStorage": "room",
-      "catalogNote": null,
+      "catalogNote": "大手メーカーのパンは消費期限の表示が多い食品です。",
       "referenceMode": "DAYS",
-      "referenceMinDays": 1,
-      "referenceTypicalDays": 2,
-      "referenceMaxDays": 3,
-      "confidence": "LOW",
+      "referenceMinDays": null,
+      "referenceTypicalDays": null,
+      "referenceMaxDays": null,
+      "confidence": "NONE",
       "assumedOpenedStatus": "unopened",
       "assumedStorage": "room",
       "note": null,
-      "sources": [],
+      "sources": [
+        {
+          "title": "山崎製パン お客様相談室「よくあるご質問」（消費期限について）",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.yamazakipan.co.jp/otoiawase/main2.html"
+        },
+        {
+          "title": "フジパン「よくあるご質問」（消費期限について）",
+          "sourceType": "MANUFACTURER",
+          "url": "https://www.fujipan.co.jp/faq/"
+        }
+      ],
       "display": {
-        "status": "VALUE",
-        "typical": "+2日",
+        "status": "NONE",
+        "typical": null,
         "typicalApprox": null,
-        "range": "+1〜3日",
+        "range": null,
         "rangeApprox": null,
         "condition": "未開封・常温の場合",
-        "hiddenReason": null
+        "hiddenReason": "大手メーカーのパンは消費期限が表示されていることが多く、メーカーは期限を過ぎたら食べないよう案内しているため、ネット参考値は設定していません。"
       },
       "opened": null
     },
