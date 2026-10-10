@@ -60,6 +60,8 @@ ${pages.map((p) => `  <url><loc>${absUrl(p.path)}</loc>${p.path.startsWith('/foo
 </urlset>
 `;
 write('/sitemap.xml', sitemap);
+// テキスト形式のサイトマップ（1行に1URL。Google が対応している形式。sitemap.xml と同じ内容）
+write('/sitemap.txt', `${pages.map((p) => absUrl(p.path)).join('\n')}\n`);
 
 // robots.txt はサイトのルートに置くもの。プロジェクトサイト（/kigen-plus）の場合は
 // ドメインのルート（arukari-paint.github.io）の robots.txt が使われるが、独自ドメインに移したときのために出力しておく
