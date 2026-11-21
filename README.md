@@ -37,7 +37,7 @@ website/
 最初の1回だけ、このフォルダで次を実行します。
 
 ```bash
-cd ~/Desktop/appli/kigen-plus/website
+cd ~/Projects/kigen-plus/website
 npm install
 ```
 
@@ -70,7 +70,7 @@ npm run dev
    - 情報源：`../src/data/referenceSources.ts`
 2. Web 用のデータを書き出して、サイトを作って確認する
    ```bash
-   cd ~/Desktop/appli/kigen-plus/website
+   cd ~/Projects/kigen-plus/website
    npm run data
    npm run build
    npm run check
@@ -133,7 +133,7 @@ App Store のURLは、Apple の公式検索API（bundleId: com.kigenplus.app）�
 2. 今のサイトを、GitHub 上のブランチとタグに残す（消さずに置いておくだけで、公開はされません）
 
    ```bash
-   cd ~/Desktop/appli/kigen-plus
+   cd ~/Projects/kigen-plus
    git remote add site https://github.com/arukari-paint/kigen-plus.git
    git fetch site main
    git push site FETCH_HEAD:refs/heads/backup/support-site-2026-09
@@ -162,7 +162,7 @@ App Store のURLは、Apple の公式検索API（bundleId: com.kigenplus.app）�
 - **すぐに戻す（おすすめ）**：GitHub の Settings → Pages → Source を **Deploy from a branch** にし、Branch を `backup/support-site-2026-09`・フォルダ `/ (root)` にして Save。1〜2分で旧サイトが表示されます。新しいサイトに戻すときは Source を **GitHub Actions** に戻します
 - **main ごと戻す**：
   ```bash
-  cd ~/Desktop/appli/kigen-plus
+  cd ~/Projects/kigen-plus
   git push site 'site-backup-2026-10-03^{commit}:refs/heads/main' --force
   ```
   そのうえで Source を **Deploy from a branch**（main・/ (root)）にします
@@ -171,7 +171,7 @@ App Store のURLは、Apple の公式検索API（bundleId: com.kigenplus.app）�
 ### 2回目以降（サイトを更新するとき）
 
 ```bash
-cd ~/Desktop/appli/kigen-plus
+cd ~/Projects/kigen-plus
 git add website && git commit -m "公式Webサイトを更新"
 git push site "$(git subtree split --prefix website main)":refs/heads/main
 ```
